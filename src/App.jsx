@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/page-scroll" element={<PageScroll />} />
+          <Route path="*" element={<div>Not Found</div>} />
         </Routes>
       </BrowserRouter>
       {/* <div>
