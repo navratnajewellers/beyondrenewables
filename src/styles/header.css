@@ -1,0 +1,75 @@
+.header-container {
+  /* border: solid 1px brown; */
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  /* border: solid 1px red; */
+  margin-right: 5px;
+  width: 70px;
+  height: 70px;
+  margin-left: 7%;
+  background-color: black;
+}
+
+.header-main {
+  /* border: solid 1px blue; */
+  padding: 12px 30px;
+  border-radius: 20px;
+  background-color: rgba(107, 107, 107, 0.35);
+}
+
+.header-main-item:hover {
+  color: #ff8b38;
+  cursor: pointer;
+}
+
+.header-started {
+  /* border: solid 1px rgb(240, 255, 28); */
+  border: solid 1px #ff8b38;
+  margin-right: 4%;
+  padding: 10px 18px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-started::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff8b38;
+  left: 0;
+  top: 100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.header-started:hover::before {
+  top: 0;
+}
+
+.header-started::after {
+  content: "Sell Your Panels"; /* Same text */
+  position: absolute;
+  left: 0;
+  top: 100%; /* Start below */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-started:hover::after {
+  transform: translateY(-100%);
+}
+
+.header-started:hover .started-text {
+  transform: translateY(-150%);
+}
