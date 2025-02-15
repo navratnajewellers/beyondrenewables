@@ -12,7 +12,6 @@
   width: 70px;
   height: 70px;
   margin-left: 7%;
-  background-color: black;
 }
 
 .header-main {
@@ -20,6 +19,15 @@
   padding: 12px 30px;
   border-radius: 20px;
   background-color: rgba(107, 107, 107, 0.35);
+}
+
+.header-main-item {
+  padding-right: 22px;
+  color: #ffffff;
+}
+
+.header-main-item:last-child {
+  padding-right: 0;
 }
 
 .header-main-item:hover {
@@ -33,8 +41,14 @@
   margin-right: 4%;
   padding: 10px 18px;
   border-radius: 20px;
+  display: inline-block;
   position: relative;
   overflow: hidden;
+}
+
+.header-started a {
+  color: black !important;
+  transition: color 0.3s ease !important;
 }
 
 .header-started::before {
@@ -53,11 +67,16 @@
   top: 0;
 }
 
-.header-started::after {
-  content: "Sell Your Panels"; /* Same text */
+.header-started:hover a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* .header-started::after {
+  content: "Sell Your Panels";
   position: absolute;
   left: 0;
-  top: 100%; /* Start below */
+  top: 100%; 
   width: 100%;
   height: 100%;
   display: flex;
@@ -72,4 +91,4 @@
 
 .header-started:hover .started-text {
   transform: translateY(-150%);
-}
+} */

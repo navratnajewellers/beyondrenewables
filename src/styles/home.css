@@ -1,0 +1,167 @@
+.home-section-1 {
+  width: 100%;
+  height: 100vh;
+  /* border: solid 1px red; */
+  background-image: url("/images/wind-1.jpg");
+  background-size: cover; /* Cover the entire element */
+  background-attachment: fixed; /* Fix the background while scrolling */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.home-section1-content {
+  /* border: solid 1px blue; */
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section-1 h2 {
+  margin-top: 220px;
+  margin-bottom: 20px;
+  font-size: 68px;
+  color: #ff8b38;
+}
+
+.home-section-1 h3 {
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.home-section-1 p {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.section1-discover {
+  border: solid 1px #ff8b38;
+  margin-top: 50px;
+  color: #cacaca;
+  padding: 10px 20px;
+  border-radius: 12px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 0;
+}
+
+.section1-discover::before {
+  content: "";
+  background-color: #ff8b38;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.section1-discover:hover::before {
+  left: 0;
+}
+
+.section1-discover:hover {
+  color: #ffffff;
+}
+
+.home-section-2 {
+  border: solid 1px yellowgreen;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section2-content h4 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.section2-content h2 {
+  margin-bottom: 40px;
+}
+
+.section2-accordion p {
+  font-size: 22px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sec2-panel-header {
+  transition: all 0.3s ease;
+}
+
+.section2-acc-panel:hover .sec2-panel-header {
+  padding-left: 60px;
+  color: #ff8b38;
+}
+
+.section-accor-con {
+  background-color: #dcdcdc;
+  margin: 0 25px;
+}
+
+.sec2-content-cont {
+  /* border: solid 1px red; */
+  padding: 15px 5px;
+}
+
+.sec2-panel-content {
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  margin: 10px 50px;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.sec2-panel-content h3 {
+  font-size: 32px;
+  margin-top: 26px;
+  margin-bottom: 7px;
+  font-family: "Ppmori", sans-serif;
+}
+
+.sec2-panel-content a {
+  font-size: 18px;
+  color: #ffaa6d;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sec2-panel-content a:hover {
+  color: #ff8b38;
+}
+
+.sec2-panel-content a:hover {
+  text-decoration: none;
+}
+
+/* section 3 */
+.home-section3 {
+  width: 100%;
+  min-height: 100vh;
+  /* border: solid 1px red; */
+  background-image: url("/images/home1.jpg");
+  background-size: cover; /* Cover the entire element */
+  background-attachment: fixed; /* Fix the background while scrolling */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-blend-mode: multiply !important;
+
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3-img {
+  height: 200px;
+  width: 200px;
+}

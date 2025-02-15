@@ -1,4 +1,5 @@
 import { motion, useScroll } from "motion/react";
+import { Accordion, Placeholder } from "rsuite";
 
 export default function PageScroll() {
   const { scrollYProgress } = useScroll();
@@ -170,6 +171,17 @@ function Content() {
         </p>
         <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
       </article>
+      <Accordion defaultActiveKey={1} bordered>
+        <Accordion.Panel header="Accordion Panel 1" eventKey={1}>
+          <Placeholder.Paragraph />
+        </Accordion.Panel>
+        <Accordion.Panel header="Accordion Panel 2" eventKey={2}>
+          <Placeholder.Paragraph />
+        </Accordion.Panel>
+        <Accordion.Panel header="Accordion Panel 3" eventKey={3}>
+          <Placeholder.Paragraph />
+        </Accordion.Panel>
+      </Accordion>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 const ServerContext = createContext();
 
 export const ServerProvider = ({ children }) => {
-  //   const serverLink = "/beyondrenewables";
+  // const serverLink = "/beyondrenewables";
 
   // production only
   const serverLink = "";

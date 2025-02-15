@@ -1,6 +1,6 @@
 import { Affix } from "rsuite";
 import "../styles/header.css";
-import companyLogo from "/images/logo-33_1-removebg-preview (1).png";
+import companyLogo from "/images/logo-33_2.png";
 
 const WbHeader = () => {
   return (
@@ -8,16 +8,36 @@ const WbHeader = () => {
       <Affix>
         <header className="header-container flex">
           <div className="logo imageWrapper">
-            <img src={companyLogo}></img>
+            <img
+              src={companyLogo}
+              alt="Transparent"
+              className="bg-transparent"
+            />
           </div>
           <div className="header-main flex flex-row">
-            <div className="p-r-10 header-main-item ">Intro</div>
-            <div className="p-r-10 header-main-item">Benefits</div>
-            <div className="p-r-10 header-main-item">Services</div>
-            <div className="p-r-10 header-main-item">Testimonials</div>
+            <a href="#" className="header-main-item ">
+              Home
+            </a>
+            <a href="#" className="header-main-item">
+              Our Solutions
+            </a>
+            <a href="#" className="header-main-item">
+              Our Products
+            </a>
+            <a href="#" className="header-main-item">
+              About
+            </a>
+            <a href="#" className="header-main-item">
+              Blog
+            </a>
+            <a href="#" className="header-main-item">
+              Contact
+            </a>
           </div>
           <div className="header-started">
-            <p className="started-text">Sell Your Panels</p>
+            <a href="#" className="started-text">
+              Sell Your Panels
+            </a>
           </div>
         </header>
       </Affix>
