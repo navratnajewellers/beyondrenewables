@@ -2,7 +2,7 @@
 import WbHeader from "../components/WbHeader";
 import { useServerLink } from "../context/server.context";
 import "../styles/home.css";
-import { Accordion, Col, Row } from "rsuite";
+import { Accordion, Col, Divider, Row } from "rsuite";
 import { motion } from "motion/react";
 import HomeCarousel from "../components/HomeCarousel";
 import PartnerLogoCarousel from "../components/PartnerLogoCarousel";
@@ -268,6 +268,7 @@ const Home = () => {
             </Col>
           </Row>
         </div>
+        <Divider />
         <div className="home-section5">
           <div className="sec5-content text-center ">
             <h4 className="main-color">Our Products</h4>
@@ -277,13 +278,16 @@ const Home = () => {
             <HomeCarousel />
           </div>
         </div>
+        <Divider />
         <div className="home-section6">
           <div className="sec5-content text-center ">
-            <h4 className="main-color">Our Products</h4>
-            <h2>Sustainably Sourced Raw Materials</h2>
+            <h4 className="main-color">Partners</h4>
+            <h2>Our Partners</h2>
           </div>
-          <div>
-            <PartnerLogoCarousel />
+          <div className=" flex justify-center ">
+            <div className="sec6-logo-container">
+              <PartnerLogoCarousel />
+            </div>
           </div>
         </div>
       </div>

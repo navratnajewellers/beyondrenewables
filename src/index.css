@@ -171,33 +171,3 @@ a:hover {
 .carousel-link5::before {
   content: "Plastic Pyrolysis Oil" !important;
 }
-
-.marquee-container {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  background-color: #f8f8f8;
-  padding: 20px 0;
-}
-
-.marquee {
-  display: flex;
-  gap: 20px;
-  animation: marquee 10s linear infinite;
-}
-
-.marquee img {
-  width: 150px;
-  height: 100px;
-  object-fit: contain;
-}
-
-/* Animation for continuous scrolling */
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}

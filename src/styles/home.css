@@ -197,7 +197,7 @@
 }
 
 .home-section4 {
-  border: solid 4px yellowgreen;
+  /* border: solid 4px yellowgreen; */
   padding-top: 125px;
   padding-left: 35px;
   padding-right: 35px;
@@ -222,9 +222,9 @@
   padding: 25px;
 }
 
-.sec4-recycling-image .imageWrapper {
-  /* height: 450px; */
-}
+/* .sec4-recycling-image .imageWrapper {
+  height: 450px;
+} */
 
 .sec4-recycling-content h4 {
   margin-bottom: 15px;
@@ -295,11 +295,26 @@
 }
 
 .home-section5 {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   min-height: 100vh;
   padding-bottom: 70px;
 }
 .sec5-content h4 {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.home-section6 {
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.sec6-logo-container {
+  /* border: solid 1px red; */
+  margin-top: 80px;
+  width: 60%;
+}
+
+.sec6-logo-container img {
+  width: 350px;
 }
