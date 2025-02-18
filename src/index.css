@@ -93,6 +93,9 @@ body {
   /* background-color: black; */
   /* color: #ffffff; */
   background-color: #f3f3f1;
+  font-family: "Vollkorn", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .imageWrapper {
