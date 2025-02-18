@@ -6,12 +6,20 @@ import { Accordion, Col, Divider, Row } from "rsuite";
 import { motion } from "motion/react";
 import HomeCarousel from "../components/HomeCarousel";
 import PartnerLogoCarousel from "../components/PartnerLogoCarousel";
+import SolarBlog from "../components/SolarBlog";
+import ContactForm from "../components/ContactForm";
+import WbFooter from "../components/WbFooter";
+import ScrollPage from "../components/ScrollPage";
 // import { FaBeer } from "react-icons/fa";
 
 const Home = () => {
   const { serverLink } = useServerLink();
+
   return (
     <div>
+      <div>
+        <ScrollPage />
+      </div>
       <div className=" absolute w-full ">
         <WbHeader />
       </div>
@@ -285,10 +293,36 @@ const Home = () => {
             <h2>Our Partners</h2>
           </div>
           <div className=" flex justify-center ">
-            <div className="sec6-logo-container">
+            <div className="fade-left"></div>
+            <div className="fade-right"></div>
+            <div
+              className="sec6-logo-container"
+              style={{
+                WebkitMaskImage:
+                  "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%)",
+              }}
+            >
               <PartnerLogoCarousel />
             </div>
           </div>
+        </div>
+        <Divider />
+        <div className="home-section7">
+          <div className="sec5-content text-center ">
+            <h4 className="main-color">Blog</h4>
+            <h2>Latest News & Blog</h2>
+          </div>
+          <div className="blog-container">
+            <SolarBlog />
+          </div>
+        </div>
+        <Divider />
+        <div className="home-section8">
+          <div className="sec8-bg-img"></div>
+          <ContactForm />
+        </div>
+        <div>
+          <WbFooter />
         </div>
       </div>
       <div>

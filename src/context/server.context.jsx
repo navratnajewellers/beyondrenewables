@@ -2,6 +2,7 @@ import { createContext, useContext } from "react";
 
 const ServerContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const ServerProvider = ({ children }) => {
   // const serverLink = "/beyondrenewables";
 

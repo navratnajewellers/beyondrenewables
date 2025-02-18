@@ -1,0 +1,16 @@
+.sec1-content-container {
+  border: solid 1px blue;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+.footer-row1-icon-container {
+  border: solid 1px red;
+  margin-right: 20px;
+}
+
+.footer-row1-icon-container svg {
+  width: 30px;
+  height: 30px;
+}
