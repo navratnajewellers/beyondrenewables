@@ -1,44 +1,46 @@
 import { Affix } from "rsuite";
 import "../styles/header.css";
 import companyLogo from "/images/logo-33_2.png";
+import AnimatedText2 from "./AnimatedText2";
+import AnimatedText3 from "./AnimatedText3";
 
 const WbHeader = () => {
   return (
     <div>
       <Affix>
         <header className="header-container flex">
-          <div className="logo imageWrapper">
+          <nav className="logo imageWrapper">
             <img
               src={companyLogo}
               alt="Transparent"
               className="bg-transparent"
             />
-          </div>
-          <div className="header-main flex flex-row">
+          </nav>
+          <nav className="header-main flex flex-row">
             <a href="#" className="header-main-item ">
-              Home
+              <AnimatedText2 text={`Home`} />
             </a>
             <a href="#" className="header-main-item">
-              Our Solutions
+              <AnimatedText2 text={`Our Solutions`} />
             </a>
             <a href="#" className="header-main-item">
-              Our Products
+              <AnimatedText2 text={`Our Products`} />
             </a>
             <a href="#" className="header-main-item">
-              About
+              <AnimatedText2 text={`About`} />
             </a>
             <a href="#" className="header-main-item">
-              Blog
+              <AnimatedText3 text={`Blog`} />
             </a>
             <a href="#" className="header-main-item">
-              Contact
+              <AnimatedText3 text={`Contact`} />
             </a>
-          </div>
-          <div className="header-started">
+          </nav>
+          <nav className="header-started">
             <a href="#" className="started-text">
               Sell Your Panels
             </a>
-          </div>
+          </nav>
         </header>
       </Affix>
     </div>

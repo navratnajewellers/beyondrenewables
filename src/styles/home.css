@@ -1,3 +1,14 @@
+.home-section-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  min-height: 100vh;
+}
+
+.home-section {
+  scroll-snap-align: start;
+  min-height: 88vh;
+}
+
 .home-section-1 {
   width: 100%;
   height: 100vh;
@@ -40,10 +51,15 @@
 
 .section1-discover {
   border: solid 1px #ff8b38;
-  margin-top: 50px;
-  color: #cacaca;
+  /* margin-top: 50px; */
+  margin-top: 40px;
+  margin-bottom: 25px;
+  /* color: #cacaca; */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
   padding: 10px 20px;
-  border-radius: 12px;
+  border-radius: 16px;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -68,11 +84,12 @@
 }
 
 .section1-discover:hover {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: black;
 }
 
 .home-section-2 {
-  border: solid 1px yellowgreen;
+  /* border: solid 1px yellowgreen; */
   min-height: 100vh;
   align-items: center;
   text-align: center;
@@ -214,6 +231,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 95px;
+}
+
+.sec4-content1:last-child {
+  margin-bottom: 55px;
 }
 
 .sec4-recycling-content {

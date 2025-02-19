@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useServerLink } from "../context/server.context";
+import HoverOverlay from "./HoverOverlay";
 
 const HomeCarousel = () => {
   const { serverLink } = useServerLink();
@@ -21,22 +22,27 @@ const HomeCarousel = () => {
     {
       id: 1,
       img: `${serverLink}/images/1.jpg`,
+      text: "Glass Cutllets",
     },
     {
       id: 2,
       img: `${serverLink}/images/2.jpg`,
+      text: "Aluminium",
     },
     {
       id: 3,
       img: `${serverLink}/images/3.jpg`,
+      text: "Copper",
     },
     {
       id: 4,
       img: `${serverLink}/images/5.jpg`,
+      text: "Silver",
     },
     {
       id: 5,
       img: `${serverLink}/images/6.jpg`,
+      text: "Plastic Pyrolysis Oil",
     },
   ];
 
@@ -49,7 +55,10 @@ const HomeCarousel = () => {
             style={{ padding: "10px" }}
             className="carousel-img-container"
           >
-            <a href="#" className={`carousel-link${product.id}`}>
+            <a
+              href="#"
+              className={`carousel-link${product.id} relative overflow-hidden group `}
+            >
               <img
                 src={product.img}
                 alt={`Product ${product.id}`}
@@ -58,6 +67,7 @@ const HomeCarousel = () => {
                   borderRadius: "10px",
                 }}
               />
+              <HoverOverlay text={product.text} buttonText="Discover" />
             </a>
           </div>
         ))}

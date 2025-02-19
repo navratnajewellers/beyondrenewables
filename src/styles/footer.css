@@ -1,16 +1,112 @@
+.wb-footer {
+  /* border: solid 1px red; */
+  /* min-height: 100vh; */
+  padding: 45px 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+
 .sec1-content-container {
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
   justify-content: center;
   align-items: center;
-  padding: 15px 15px;
+  padding: 15px 25px;
+  /* color: #ffffff; */
+}
+
+.sec1-content-container a {
+  color: #ffffff !important;
 }
 
 .footer-row1-icon-container {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   margin-right: 20px;
+  padding: 10px;
+  background-color: #ff8b38;
+
+  border-radius: 20px;
 }
 
 .footer-row1-icon-container svg {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
+  color: #ffffff;
+}
+
+.sec2-content-container {
+  /* border: solid 1px blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 35px 15px;
+}
+
+.sec2-content-container h4 {
+  margin-bottom: 25px;
+}
+
+.sec2-ul li {
+  list-style-type: disc;
+  color: #ff8b38;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.sec2-ul a {
+  color: #cccccc !important;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.sec2-ul a:hover {
+  color: #ff8b38 !important;
+  padding-left: 15px;
+}
+
+.footer-sec2-logo {
+  /* height: 200px; */
+  width: 220px;
+}
+
+.ft-sec2-social-icon-container a {
+  color: #ff8b38 !important;
+  transition: all 0.3s ease;
+}
+
+.ft-sec2-social-icon-container a:hover {
+  color: #ffffff !important;
+  scale: 1.5;
+}
+
+.footer-copyright-container {
+  /* border: solid 1px red; */
+  padding: 25px 45px;
+  background-color: black;
+  color: #cccccc;
+  font-size: 16px;
+  font-family: "Vollkorn", "Times New Roman", Times, serif;
+}
+
+.ft-cp-sec1 a {
+  margin-left: 8px;
+  color: #ff8b38 !important;
+  font-family: "Delicious Handrawn", "Times New Roman", Times, serif;
+  font-size: 19px;
+  display: inline-block;
+}
+
+.ft-cp-sec2 {
+  /* border: solid 1px yellow; */
+  text-align: end;
+  padding-right: 25px;
+}
+
+.ft-cp-sec2 a {
+  margin-right: 25px;
+  color: #cacaca !important;
+  transition: all 0.3s ease;
+}
+
+.ft-cp-sec2 a:hover {
+  color: #ff8b38 !important;
 }

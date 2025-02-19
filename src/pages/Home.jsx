@@ -62,15 +62,15 @@ const Home = () => {
                 eventKey={1}
                 className="section2-acc-panel"
               >
-                <Row className="sec2-content-cont">
+                <Row className="sec2-content-cont custom-flex ">
                   <Col xs={10}>
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
                       transition={{ duration: 0.6 }}
                     >
-                      <div className="imageWrapper">
-                        <img src={`${serverLink}/images/1.jpg`} />
+                      <div className="imageWrapper ">
+                        <img src={`${serverLink}/images/section2-image1.png`} />
                       </div>
                     </motion.div>
                   </Col>
@@ -103,7 +103,7 @@ const Home = () => {
                 eventKey={2}
                 className="section2-acc-panel"
               >
-                <Row className="sec2-content-cont">
+                <Row className="sec2-content-cont custom-flex ">
                   <Col xs={10}>
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
@@ -111,7 +111,7 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper">
-                        <img src={`${serverLink}/images/1.jpg`} />
+                        <img src={`${serverLink}/images/section2-image2.png`} />
                       </div>
                     </motion.div>
                   </Col>
@@ -145,7 +145,7 @@ const Home = () => {
                 eventKey={3}
                 className="section2-acc-panel"
               >
-                <Row className="sec2-content-cont">
+                <Row className="sec2-content-cont custom-flex ">
                   <Col xs={10}>
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
@@ -153,7 +153,7 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper">
-                        <img src={`${serverLink}/images/1.jpg`} />
+                        <img src={`${serverLink}/images/section2-image3.png`} />
                       </div>
                     </motion.div>
                   </Col>
@@ -181,7 +181,7 @@ const Home = () => {
             </Accordion>
           </div>
         </div>
-        <Row className="home-section3 flex ">
+        <Row className="home-section3 flex  ">
           <div className="home-section3-bg"></div>
           <Col xs={14} className="sec3-content">
             <motion.div
@@ -212,8 +212,14 @@ const Home = () => {
             </motion.div>
           </Col>
         </Row>
-        <div className="home-section4">
-          <Row className="sec4-content1">
+        <div className="home-section4 ">
+          <Row
+            as={motion.div}
+            className="sec4-content1"
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <Col xs={24} md={12} className="sec4-recycling-image">
               <div className="imageWrapper recycling-img1">
                 <img src={`${serverLink}/images/consultation.jpg`} />
@@ -239,7 +245,13 @@ const Home = () => {
               </p>
             </Col>
           </Row>
-          <Row className="sec4-content1">
+          <Row
+            as={motion.div}
+            className="sec4-content1"
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <Col xs={24} md={12} className="sec4-recycling-content">
               <h4 className="main-color">About Us</h4>
               <h2>Innovators in Renewables Recycling</h2>
@@ -277,22 +289,41 @@ const Home = () => {
           </Row>
         </div>
         <Divider />
-        <div className="home-section5">
-          <div className="sec5-content text-center ">
+        <div className="home-section5 ">
+          <motion.div
+            className="sec5-content text-center "
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <h4 className="main-color">Our Products</h4>
             <h2>Sustainably Sourced Raw Materials</h2>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <HomeCarousel />
-          </div>
+          </motion.div>
         </div>
         <Divider />
-        <div className="home-section6">
-          <div className="sec5-content text-center ">
+        <div className="home-section6 ">
+          <motion.div
+            className="sec5-content text-center "
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <h4 className="main-color">Partners</h4>
             <h2>Our Partners</h2>
-          </div>
-          <div className=" flex justify-center ">
+          </motion.div>
+          <motion.div
+            className=" flex justify-center "
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="fade-left"></div>
             <div className="fade-right"></div>
             <div
@@ -304,26 +335,45 @@ const Home = () => {
             >
               <PartnerLogoCarousel />
             </div>
-          </div>
+          </motion.div>
         </div>
         <Divider />
-        <div className="home-section7">
-          <div className="sec5-content text-center ">
+        <div className="home-section7 ">
+          <motion.div
+            className="sec5-content text-center "
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <h4 className="main-color">Blog</h4>
             <h2>Latest News & Blog</h2>
-          </div>
-          <div className="blog-container">
+          </motion.div>
+          <motion.div
+            className="blog-container"
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <SolarBlog />
-          </div>
+          </motion.div>
         </div>
         <Divider />
-        <div className="home-section8">
+        <motion.div
+          className="home-section8 "
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div className="sec8-bg-img"></div>
           <ContactForm />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <WbFooter />
-        </div>
+        </motion.div>
       </div>
       <div>
         {/* <h3>
