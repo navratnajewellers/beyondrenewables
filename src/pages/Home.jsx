@@ -20,7 +20,7 @@ const Home = () => {
       <div>
         <ScrollPage />
       </div>
-      <div className=" absolute w-full ">
+      <div className=" absolute w-full z-10 ">
         <WbHeader />
       </div>
       <div>
@@ -367,13 +367,9 @@ const Home = () => {
           <div className="sec8-bg-img"></div>
           <ContactForm />
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, translateY: 25 }}
-          whileInView={{ opacity: 1, translateY: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
+        <div>
           <WbFooter />
-        </motion.div>
+        </div>
       </div>
       <div>
         {/* <h3>
