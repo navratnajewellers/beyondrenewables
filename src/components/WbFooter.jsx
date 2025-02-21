@@ -6,8 +6,11 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import AnimatedText from "./AnimatedText";
 import companyLogo from "/images/logo-33.webp";
+import { useServerLink } from "../context/server.context";
 
 const WbFooter = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Container className="wb-footer">
@@ -66,7 +69,10 @@ const WbFooter = () => {
         <Row>
           <Col xs={24} sm={24} md={8} lg={8} className="sec2-content-container">
             <div>
-              <a href="/" className="imageWrapper footer-sec2-logo ">
+              <a
+                href={`${serverLink}/`}
+                className="imageWrapper footer-sec2-logo "
+              >
                 <img src={companyLogo} />
               </a>
               <div className=" flex justify-evenly m-4 ft-sec2-social-icon-container ">
@@ -110,13 +116,13 @@ const WbFooter = () => {
               <h4>Quick Links</h4>
               <ul className="sec2-ul">
                 <li>
-                  <a href="/contact">Contact</a>
+                  <a href={`${serverLink}/contact`}>Contact</a>
                 </li>
                 <li>
-                  <a href="/about">About</a>
+                  <a href={`${serverLink}/about`}>About</a>
                 </li>
                 <li>
-                  <a href="/blog">Blog</a>
+                  <a href={`${serverLink}/blog`}>Blog</a>
                 </li>
               </ul>
             </div>
@@ -161,8 +167,8 @@ const WbFooter = () => {
           </Col>
           <Col xs={24} sm={24} md={10} lg={10}>
             <section className="ft-cp-sec2">
-              <a href="/privacy-policy">Privacy & Policy</a>
-              <a href="/term-condition">Terms and Conditions</a>
+              <a href={`${serverLink}/privacy-policy`}>Privacy & Policy</a>
+              <a href={`${serverLink}/term-condition`}>Terms and Conditions</a>
             </section>
           </Col>
         </Row>

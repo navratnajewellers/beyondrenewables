@@ -3,13 +3,16 @@ import "../styles/header.css";
 import companyLogo from "/images/logo-33_2.png";
 import AnimatedText2 from "./AnimatedText2";
 import AnimatedText3 from "./AnimatedText3";
+import { useServerLink } from "../context/server.context";
 
 const WbHeader = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Affix>
         <header className="header-container flex">
-          <a href="/" className="logo imageWrapper">
+          <a href={`${serverLink}/`} className="logo imageWrapper">
             <img
               src={companyLogo}
               alt="Transparent"
@@ -17,7 +20,7 @@ const WbHeader = () => {
             />
           </a>
           <nav className="header-main flex flex-row">
-            <a href="/" className="header-main-item ">
+            <a href={`${serverLink}/`} className="header-main-item ">
               <AnimatedText2 text={`Home`} />
             </a>
             {/* <a href="#" className="header-main-item">
@@ -44,13 +47,13 @@ const WbHeader = () => {
             <a href="#" className="header-main-item">
               <AnimatedText2 text={`Our Products`} />
             </a>
-            <a href="/about" className="header-main-item">
+            <a href={`${serverLink}/about`} className="header-main-item">
               <AnimatedText2 text={`About`} />
             </a>
-            <a href="/blog" className="header-main-item">
+            <a href={`${serverLink}/blog`} className="header-main-item">
               <AnimatedText3 text={`Blog`} />
             </a>
-            <a href="/contact" className="header-main-item">
+            <a href={`${serverLink}/contact`} className="header-main-item">
               <AnimatedText3 text={`Contact`} />
             </a>
           </nav>
