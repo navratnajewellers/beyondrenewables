@@ -66,9 +66,9 @@ const WbFooter = () => {
         <Row>
           <Col xs={24} sm={24} md={8} lg={8} className="sec2-content-container">
             <div>
-              <div className="imageWrapper footer-sec2-logo ">
+              <a href="/" className="imageWrapper footer-sec2-logo ">
                 <img src={companyLogo} />
-              </div>
+              </a>
               <div className=" flex justify-evenly m-4 ft-sec2-social-icon-container ">
                 <a href="#">
                   <FaFacebookF />
@@ -90,13 +90,17 @@ const WbFooter = () => {
               <h4>Services</h4>
               <ul className="sec2-ul">
                 <li>
-                  <a href="">Solar Recycling</a>
+                  <a href="solar-recycling">Solar Recycling</a>
                 </li>
                 <li>
-                  <a href="">Decommissioning of solar panels</a>
+                  <a href="decommissioning-solar-panels">
+                    Decommissioning of solar panels
+                  </a>
                 </li>
                 <li>
-                  <a href="">Digitization of solar panels</a>
+                  <a href="digitization-solar-panels">
+                    Digitization of solar panels
+                  </a>
                 </li>
               </ul>
             </div>
@@ -122,16 +126,18 @@ const WbFooter = () => {
               <h4>Get In Touch</h4>
               <ul className="sec2-ul">
                 <li>
-                  <a href="">Manhar Dixit: 8192804780</a>
+                  <a href="tel:+918192804780">Manhar Dixit: 8192804780</a>
                 </li>
                 <li>
-                  <a href=""> Vedant Taneja: 8340325075 </a>
+                  <a href="tel:+918340325075"> Vedant Taneja: 8340325075 </a>
                 </li>
                 <li>
-                  <a href="">info@beyondrenewables.in</a>
+                  <a href="mailto:info@beyondrenewables.in">
+                    info@beyondrenewables.in
+                  </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     1505/1506, Hemkunt Tower, 98, Nehru Place, New delhi -
                     110019
                   </a>
@@ -155,8 +161,8 @@ const WbFooter = () => {
           </Col>
           <Col xs={24} sm={24} md={10} lg={10}>
             <section className="ft-cp-sec2">
-              <a href="#">Privacy & Policy</a>
-              <a href="#">Terms and Conditions</a>
+              <a href="/privacy-policy">Privacy & Policy</a>
+              <a href="/term-condition">Terms and Conditions</a>
             </section>
           </Col>
         </Row>

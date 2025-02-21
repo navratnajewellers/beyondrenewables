@@ -89,6 +89,14 @@ html {
   padding-right: 15px;
 }
 
+.dis-none {
+  display: none;
+}
+
+.dis-none-imp {
+  display: none !important ;
+}
+
 .custom-flex {
   display: flex;
   justify-content: center;

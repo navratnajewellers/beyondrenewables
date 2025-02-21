@@ -1,0 +1,136 @@
+.contact-section1-container {
+  /* border: solid 1px red; */
+  min-height: 100vh;
+  background-color: rgba(192, 192, 192, 0.3);
+  padding: 75px 25px 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ct-sec1-header h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.ct-sec1-content {
+  /* border: solid 1px greenyellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 75px 0;
+  flex-wrap: wrap;
+}
+
+.ct-contact-container {
+  border: solid 4px #ffffff;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.ct-contact-container .imageWrapper {
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ct-contact-container .imageWrapper::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: all 0.3s ease;
+}
+
+.ct-contact-container .imageWrapper:hover::after {
+  height: 200%;
+}
+
+.ct-contact-container .imageWrapper img {
+  transition: all 0.7s ease;
+}
+.ct-contact-container .imageWrapper:hover img {
+  transform: scale(1.2);
+}
+
+.ct-contact-details-container {
+  /* border: solid 1px black; */
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ct-contact-details {
+  /* border: solid 1px #ffffff; */
+  color: black;
+  padding: 10px 15px;
+  padding-left: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 86%;
+}
+
+.ct-contact-details p,
+a {
+  color: #858585;
+}
+
+.ct-social-icon-container {
+  /* border: solid 1px red; */
+  padding: 10px;
+}
+
+.ct-social-icon-container a {
+  /* border: solid 1px blue; */
+  padding: 7px;
+  background-color: #ff8b38;
+  color: #000000;
+  border-radius: 26%;
+  overflow: hidden;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.ct-social-icon-container a:hover {
+  background-color: #000000;
+  color: #ff8b38;
+}
+
+.contact-section2-container {
+  /* border: solid 1px red; */
+  min-height: 100vh;
+  padding: 75px 25px;
+  background-color: rgba(222, 222, 222, 0.3);
+}
+
+.ct-sec2-header {
+  margin-bottom: 55px;
+}
+
+.ct-sec2-header h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.ct-sec2-contactform,
+.ct-sec2-gmap-conatiner {
+  padding: 25px;
+  /* border: solid 1px blue; */
+}
+
+.ct-sec2-gmap {
+  width: 100%;
+  height: 610px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
