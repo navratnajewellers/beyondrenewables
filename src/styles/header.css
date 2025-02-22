@@ -152,3 +152,148 @@
 .header-sub-menu li:hover a {
   color: #ff9800;
 }
+
+/* Mobile Header */
+
+/* .m-header-container {
+  border: solid 1px red;
+  padding: 10px;
+} */
+
+.m-header {
+  /* border: solid 1px blue; */
+  /* min-height: 8vh; */
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 18px 10px;
+}
+
+.m-h-logo-container {
+  /* border: solid 1px yellow; */
+  display: flex;
+  justify-content: center;
+}
+
+.m-h-logo {
+  display: inline-block;
+  width: 70%;
+  min-height: 20px;
+}
+
+.m-header-section2-container {
+  /* border: solid 1px blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  margin-top: 20px;
+}
+
+/* .m-header-started {
+  border: solid 1px red;
+} */
+
+.m-started-text {
+  color: #ffffff;
+  /* border: solid 1px black; */
+  background-color: #ff8b38;
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.m-started-text:hover {
+  background-color: #ffffff;
+  color: #ff8b38;
+}
+
+.m-header-drawer-container {
+  border: solid 1px red;
+  width: 100dvw !important;
+}
+
+.m-header-drawer-container .rs-drawer-body {
+  padding: 0;
+}
+
+.m-header-drawer-container .rs-drawer-header {
+  background-color: #333;
+}
+
+.m-header-drawer-container .rs-drawer-header-close {
+  /* border: solid 1px red; */
+  background-color: #ff8b38;
+  color: #ffffff;
+}
+
+.vertical_menu {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  /* height: 100vh; */
+  height: 100%;
+  width: 100%;
+}
+
+.vertical_menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical_menu ul li {
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: #878787;
+  border-bottom-width: 2px;
+}
+
+.vertical_menu ul li:last-child {
+  border: none;
+}
+
+.vertical_menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.vertical_menu ul li a:hover {
+  background-color: #575757;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.menu-item-has-children .sub-menu.open {
+  max-height: 500px;
+}
+
+.mobile-arrows {
+  /* border: solid 1px red; */
+  height: 40px;
+  position: absolute;
+  right: 5%;
+  /* right: 10px; */
+  top: 10px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -131,6 +131,10 @@ a:hover {
   color: #ff8b38;
 }
 
+.main-color-imp {
+  color: #ff8b38 !important ;
+}
+
 .carousel-img-container {
   /* border: solid 1px red; */
   padding-right: 15px;

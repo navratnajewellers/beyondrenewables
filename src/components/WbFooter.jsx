@@ -157,12 +157,10 @@ const WbFooter = () => {
         <Row className="footer-copyright-container">
           <Col xs={24} sm={24} md={14} lg={14}>
             <section className="ft-cp-sec1">
-              <p>
-                Copyright {new Date().getFullYear()} - All Rights Reserved By
-                <a href="#">
-                  <AnimatedText text={`Beyond Renewables`} />
-                </a>
-              </p>
+              Copyright {new Date().getFullYear()} - All Rights Reserved By
+              <a href="#">
+                <AnimatedText text={`Beyond Renewables`} />
+              </a>
             </section>
           </Col>
           <Col xs={24} sm={24} md={10} lg={10}>

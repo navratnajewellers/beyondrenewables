@@ -34,12 +34,14 @@
   margin-bottom: 20px;
   font-size: 68px;
   color: #ff8b38;
+  text-align: center;
 }
 
 .home-section-1 h3 {
   font-size: 35px;
   color: #ffffff;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .home-section-1 p {
@@ -538,4 +540,17 @@
 .contact-form-container {
   border-radius: 16px;
   padding: 45px 8%;
+}
+
+/* Mobile Device */
+
+@media screen and (max-width: 640px) {
+  .home-section-1 h2 {
+    font-size: 58px;
+    line-height: 1.1;
+  }
+
+  .section1-discover {
+    background-color: #ff8b38;
+  }
 }

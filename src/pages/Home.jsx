@@ -48,7 +48,7 @@ const Home = () => {
         </div>
         <div className="home-section-2 flex flex-col ">
           <div className="section2-content">
-            <h4>Our Solutions</h4>
+            <h4 className="main-color">Our Solutions</h4>
             <h2>Our PV Recycling Ecosystem</h2>
           </div>
           <div className=" w-full section2-accordion">
@@ -63,7 +63,7 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col xs={10}>
+                  <Col xs={24}>
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
@@ -74,7 +74,7 @@ const Home = () => {
                       </div>
                     </motion.div>
                   </Col>
-                  <Col xs={14}>
+                  <Col xs={24}>
                     <div className="sec2-panel-content">
                       <motion.div
                         initial={{ opacity: 0, translateY: 35 }}

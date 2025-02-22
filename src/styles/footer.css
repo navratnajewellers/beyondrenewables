@@ -111,3 +111,29 @@
 .ft-cp-sec2 a:hover {
   color: #ff8b38 !important;
 }
+
+/* Mobile devices */
+
+@media screen and (max-width: 640px) {
+  .sec1-content-container,
+  .sec2-content-container {
+    justify-content: flex-start;
+  }
+
+  .sec2-content-container:first-child {
+    justify-content: center;
+  }
+
+  .ft-cp-sec2 {
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .ft-cp-sec2 a:last-child {
+    margin: 0;
+  }
+}
