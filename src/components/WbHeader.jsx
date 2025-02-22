@@ -4,6 +4,7 @@ import companyLogo from "/images/logo-33_2.png";
 import AnimatedText2 from "./AnimatedText2";
 import AnimatedText3 from "./AnimatedText3";
 import { useServerLink } from "../context/server.context";
+import { Link } from "react-router-dom";
 
 const WbHeader = () => {
   const { serverLink } = useServerLink();
@@ -20,9 +21,9 @@ const WbHeader = () => {
             />
           </a>
           <nav className="header-main flex flex-row">
-            <a href={`${serverLink}/`} className="header-main-item ">
+            <Link to={`${serverLink}/`} className="header-main-item ">
               <AnimatedText2 text={`Home`} />
-            </a>
+            </Link>
             {/* <a href="#" className="header-main-item">
               <AnimatedText2 text={`Our Solutions`} />
             </a> */}
@@ -47,9 +48,9 @@ const WbHeader = () => {
             <a href="#" className="header-main-item">
               <AnimatedText2 text={`Our Products`} />
             </a>
-            <a href={`${serverLink}/about`} className="header-main-item">
+            <Link to={`${serverLink}/about`} className="header-main-item">
               <AnimatedText2 text={`About`} />
-            </a>
+            </Link>
             <a href={`${serverLink}/blog`} className="header-main-item">
               <AnimatedText3 text={`Blog`} />
             </a>
