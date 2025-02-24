@@ -72,7 +72,7 @@ const WbHeader = () => {
             </a>
           </nav>
           <nav className="header-started">
-            <a href="#" className="started-text">
+            <a href="/contact" className="started-text">
               Sell Your Panels
             </a>
           </nav>
@@ -105,7 +105,7 @@ const WbHeader = () => {
                 />
               </nav>
               <nav className="m-header-started">
-                <a href="#" className="m-started-text">
+                <a href="/contact" className="m-started-text">
                   Sell Your Panels
                 </a>
               </nav>
