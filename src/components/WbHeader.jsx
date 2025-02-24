@@ -3,7 +3,7 @@ import "../styles/header.css";
 import companyLogo from "/images/logo-33_2.png";
 import mobileCompanyLogo from "/images/logo-1.png";
 import AnimatedText2 from "./AnimatedText2";
-import AnimatedText3 from "./AnimatedText3";
+// import AnimatedText3 from "./AnimatedText3";
 import { useServerLink } from "../context/server.context";
 import { Link } from "react-router-dom";
 import MenuIcon from "@rsuite/icons/Menu";
@@ -65,10 +65,10 @@ const WbHeader = () => {
               <AnimatedText2 text={`About`} />
             </Link>
             <a href={`${serverLink}/blog`} className="header-main-item">
-              <AnimatedText3 text={`Blog`} />
+              <AnimatedText2 text={`Blog`} />
             </a>
             <a href={`${serverLink}/contact`} className="header-main-item">
-              <AnimatedText3 text={`Contact`} />
+              <AnimatedText2 text={`Contact`} />
             </a>
           </nav>
           <nav className="header-started">

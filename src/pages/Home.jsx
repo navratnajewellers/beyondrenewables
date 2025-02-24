@@ -26,6 +26,7 @@ const Home = () => {
       <div>
         <div className="home-section-1">
           {/* <img src="/images/wind-1.jpg" /> */}
+          <div className="home-section1-bg-img"></div>
           <motion.div
             className=" flex flex-col home-section1-content "
             initial={{ opacity: 0, translateY: 65 }}
@@ -63,18 +64,19 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col xs={24}>
+                  <Col xs={10} className="sec2-home-img-cont">
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper ">
-                        <img src={`${serverLink}/images/section2-image1.png`} />
+                        {/* <img src={`${serverLink}/images/section2-image1.png`} /> */}
+                        <img src={`${serverLink}/images/solar-panel.png`} />
                       </div>
                     </motion.div>
                   </Col>
-                  <Col xs={24}>
+                  <Col xs={14}>
                     <div className="sec2-panel-content">
                       <motion.div
                         initial={{ opacity: 0, translateY: 35 }}
@@ -111,7 +113,8 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper">
-                        <img src={`${serverLink}/images/section2-image2.png`} />
+                        {/* <img src={`${serverLink}/images/section2-image2.png`} /> */}
+                        <img src={`${serverLink}/images/solar-energy.png`} />
                       </div>
                     </motion.div>
                   </Col>
@@ -153,7 +156,10 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper">
-                        <img src={`${serverLink}/images/section2-image3.png`} />
+                        {/* <img src={`${serverLink}/images/section2-image3.png`} /> */}
+                        <img
+                          src={`${serverLink}/images/renewable-energy.png`}
+                        />
                       </div>
                     </motion.div>
                   </Col>
