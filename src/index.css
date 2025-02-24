@@ -198,3 +198,16 @@ a:hover {
   font-family: "Times New Roman", Times, serif;
   font-size: 22px;
 }
+
+/* contact form */
+
+.contact-form-container {
+  border-radius: 16px;
+  padding: 45px 8%;
+}
+
+@media screen and (max-width: 640px) {
+  .contact-form-container {
+    padding: 45px 7%;
+  }
+}

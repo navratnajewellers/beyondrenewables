@@ -1,5 +1,6 @@
 import { Col, Row } from "rsuite";
 import { useServerLink } from "../context/server.context";
+import "../styles/solarBlog.css";
 
 const SolarBlog = () => {
   const { serverLink } = useServerLink();

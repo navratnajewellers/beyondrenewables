@@ -64,7 +64,13 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col xs={10} className="sec2-home-img-cont">
+                  <Col
+                    xs={24}
+                    sm={24}
+                    md={10}
+                    lg={10}
+                    className="sec2-home-img-cont"
+                  >
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
@@ -76,7 +82,7 @@ const Home = () => {
                       </div>
                     </motion.div>
                   </Col>
-                  <Col xs={14}>
+                  <Col xs={24} sm={24} md={14} lg={14}>
                     <div className="sec2-panel-content">
                       <motion.div
                         initial={{ opacity: 0, translateY: 35 }}
@@ -106,7 +112,13 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col xs={10}>
+                  <Col
+                    xs={24}
+                    sm={24}
+                    md={10}
+                    lg={10}
+                    className="sec2-home-img-cont"
+                  >
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
@@ -118,7 +130,7 @@ const Home = () => {
                       </div>
                     </motion.div>
                   </Col>
-                  <Col xs={14}>
+                  <Col xs={24} sm={24} md={14} lg={14}>
                     <div className="sec2-panel-content">
                       <motion.div
                         initial={{ opacity: 0, translateY: 35 }}
@@ -149,7 +161,13 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col xs={10}>
+                  <Col
+                    xs={24}
+                    sm={24}
+                    md={10}
+                    lg={10}
+                    className="sec2-home-img-cont"
+                  >
                     <motion.div
                       initial={{ opacity: 0, translateY: 25 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
@@ -163,7 +181,7 @@ const Home = () => {
                       </div>
                     </motion.div>
                   </Col>
-                  <Col xs={14}>
+                  <Col xs={24} sm={24} md={14} lg={14}>
                     <div className="sec2-panel-content">
                       <motion.div
                         initial={{ opacity: 0, translateY: 35 }}
@@ -189,7 +207,7 @@ const Home = () => {
         </div>
         <Row className="home-section3 flex  ">
           <div className="home-section3-bg"></div>
-          <Col xs={14} className="sec3-content">
+          <Col xs={24} sm={24} md={14} lg={14} className="sec3-content">
             <motion.div
               className=" flex flex-col text-center "
               initial={{ opacity: 0, translateY: 25 }}
@@ -207,7 +225,13 @@ const Home = () => {
               </p>
             </motion.div>
           </Col>
-          <Col xs={10} className=" flex justify-center ">
+          <Col
+            xs={24}
+            sm={24}
+            md={10}
+            lg={10}
+            className=" flex justify-center home-section3-image"
+          >
             <motion.div
               className="imageWrapper sec3-img "
               initial={{ opacity: 0, scale: 0.5 }}
@@ -226,7 +250,13 @@ const Home = () => {
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Col xs={24} md={12} className="sec4-recycling-image">
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              className="sec4-recycling-image"
+            >
               <div className="imageWrapper recycling-img1">
                 <img src={`${serverLink}/images/consultation.jpg`} />
               </div>
@@ -237,7 +267,13 @@ const Home = () => {
                 <img src={`${serverLink}/images/dot effect.svg`} />
               </div>
             </Col>
-            <Col xs={24} md={12} className="sec4-recycling-content">
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              className="sec4-recycling-content sec4-pv-container"
+            >
               <h4 className="main-color">PV Recycling</h4>
               <h2>Beyond Renewables: Sustainability through Circularity</h2>
               <p>

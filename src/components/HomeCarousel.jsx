@@ -3,15 +3,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useServerLink } from "../context/server.context";
 import HoverOverlay from "./HoverOverlay";
+import { useMediaQuery } from "rsuite";
 
 const HomeCarousel = () => {
   const { serverLink } = useServerLink();
+
+  const [isMobile] = useMediaQuery("(max-width: 640px)");
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Show 3 images at a time
+    slidesToShow: isMobile ? 1 : 3, // Show 3 images at a time
     slidesToScroll: 1, // Move only 1 slide at a time
     autoplay: true,
     autoplaySpeed: 3000,

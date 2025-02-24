@@ -46,15 +46,17 @@ const WbHeader = () => {
               </a>
               <ul className="header-sub-menu">
                 <li>
-                  <a href="solar_recycling.html">Solar Recycling</a>
+                  <a href="/solar-recycling">Solar Recycling</a>
                 </li>
                 <li>
-                  <a href="decommissioning.html">
+                  <a href="/solar-decommissioning">
                     Decommissioning of Solar Assets
                   </a>
                 </li>
                 <li>
-                  <a href="digitization.html ">Digitization of Solar Assets</a>
+                  <a href="/solar-digitization ">
+                    Digitization of Solar Assets
+                  </a>
                 </li>
               </ul>
             </div>

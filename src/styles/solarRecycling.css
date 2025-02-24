@@ -1,0 +1,38 @@
+.sr-section1-container {
+  border: solid 1px red;
+  min-height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.sr-sec1-img-container {
+  border: solid 1px blue;
+  height: 70vh;
+}
+
+.sr-sec1-img-container .imageWrapper {
+  width: 350px;
+  height: 500px;
+}
+
+.sr-sec1-content-container {
+  border: solid 1px rgb(0, 255, 140);
+  padding: 45px 25px;
+}
+
+.sr-sec1-header {
+  border: solid 1px greenyellow;
+  padding: 25px 0;
+}
+
+.sr-sec1-header h2 {
+  margin-top: 10px;
+}
+
+.sr-sec1-content p {
+  font-size: 16px;
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
+  padding: 7px 15px;
+  color: #cacaca;
+}
