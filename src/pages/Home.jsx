@@ -41,7 +41,7 @@ const Home = () => {
               solutions for a greener, cleaner, and circular future.{" "}
             </p>
             <div>
-              <a href="#" className="section1-discover">
+              <a href="/about" className="section1-discover">
                 Discover{" "}
               </a>
             </div>

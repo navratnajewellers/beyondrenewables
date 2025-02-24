@@ -6,6 +6,7 @@ import { PiLinkSimpleBold } from "react-icons/pi";
 import WbFooter from "../components/WbFooter";
 import profileImage1 from "/images/t2.png";
 import profileImage2 from "/images/t3.png";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -31,11 +32,21 @@ const About = () => {
       </div>
       <div className="about-section1-container">
         <div className="about-sec1-bg-img"></div>
-        <div className="about-sec1-header">
+        <motion.div
+          className="about-sec1-header"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className="main-color">Solar Energy</h4>
           <h2>Beyond Renewables: Pioneering a Cleaner Future</h2>
-        </div>
-        <div className="about-sec1-content">
+        </motion.div>
+        <motion.div
+          className="about-sec1-content"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <p>
             In an era where the environment&apos;s health is paramount, three
             visionaries-Manhar and Vedant-embarked on a journey to make a
@@ -66,15 +77,25 @@ const About = () => {
             opportunities to expand and impact various sectors, contributing to
             a sustainable future for generations to come.
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="about-section2-container">
         <div className="about-sec1-bg-img"></div>
-        <div className="about-sec1-header">
+        <motion.div
+          className="about-sec1-header"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className="main-color">Our Team</h4>
           <h2>Our Best Experts</h2>
-        </div>
-        <div className="about-sec2-content">
+        </motion.div>
+        <motion.div
+          className="about-sec2-content"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div className="about-profile-container">
             <div className="imageWrapper">
               <img src={profileImage1} />
@@ -107,7 +128,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div>
         <WbFooter />

@@ -11,6 +11,7 @@ import locationImage from "/images/location-img.jpeg";
 import emailImage from "/images/email-img.jpeg";
 import phoneImage from "/images/phone-img.jpeg";
 import followImage from "/images/follow-img.jpeg";
+import { motion } from "motion/react";
 
 const Contact = () => {
   const [isMapLoading, setIsMapLoading] = useState(true);
@@ -37,11 +38,21 @@ const Contact = () => {
         </Breadcrumb>
       </div>
       <div className="contact-section1-container">
-        <div className="ct-sec1-header text-center ">
+        <motion.div
+          className="ct-sec1-header text-center "
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className="main-color">Contact details</h4>
           <h2>Happy to Answer All Your Questions</h2>
-        </div>
-        <div className="ct-sec1-content">
+        </motion.div>
+        <motion.div
+          className="ct-sec1-content"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div className="ct-contact-container">
             <div className="imageWrapper">
               <img src={locationImage} />
@@ -109,14 +120,25 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="contact-section2-container">
-        <Row className="ct-sec2-header text-center ">
+        <Row
+          as={motion.div}
+          className="ct-sec2-header text-center "
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className="main-color">Contact details</h4>
           <h2>Happy to Answer All Your Questions</h2>
         </Row>
-        <Row>
+        <Row
+          as={motion.div}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Col xs={24} sm={24} md={12} lg={12} className="ct-sec2-contactform">
             <ContactForm />
           </Col>
