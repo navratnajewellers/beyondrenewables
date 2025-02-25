@@ -2,6 +2,7 @@ import { Breadcrumb, Col, Row } from "rsuite";
 import "../styles/solarRecycling.css";
 import ScrollPage from "../components/ScrollPage";
 import WbHeader from "../components/WbHeader";
+import WbFooter from "../components/WbFooter";
 
 const SolarRecycling = () => {
   return (
@@ -77,6 +78,9 @@ const SolarRecycling = () => {
             </div>
           </Col>
         </Row>
+      </div>
+      <div>
+        <WbFooter />
       </div>
     </div>
   );
