@@ -21,16 +21,32 @@ const WbHeader = () => {
 
   console.log("is on Mobile device", isMobile);
 
+  if (!CSS.supports("animation-timeline: scroll()")) {
+    let lastScroll = 0;
+    const header = document.getElementById("headerLogo");
+
+    window.addEventListener("scroll", () => {
+      let currentScroll = window.scrollY;
+      if (currentScroll > lastScroll) {
+        header.style.display = "none"; // Hide when scrolling down
+      } else {
+        header.style.display = "block"; // Show when scrolling up
+      }
+      lastScroll = currentScroll;
+    });
+  }
+
   //Desktop Header
   const DesktopHeader = () => {
     return (
-      <Affix>
+      <Affix className="header-fixed-container">
         <header className="header-container flex">
           <a href={`${serverLink}/`} className="logo imageWrapper">
             <img
               src={companyLogo}
               alt="Transparent"
-              className="bg-transparent"
+              className={`bg-transparent header-logo`}
+              id="headerLogo"
             />
           </a>
           <nav className="header-main flex flex-row">
@@ -49,9 +65,7 @@ const WbHeader = () => {
                   <a href="/solar-recycling">Solar Recycling</a>
                 </li>
                 <li>
-                  <a href="/solar-decommissioning">
-                    Decommissioning of Solar Assets
-                  </a>
+                  <a href="/decommissioning">Decommissioning of Solar Assets</a>
                 </li>
                 <li>
                   <a href="/solar-digitization ">

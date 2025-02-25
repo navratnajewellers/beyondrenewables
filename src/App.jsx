@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermCondition from "./pages/TermCondition";
 import SolarRecycling from "./pages/SolarRecycling";
+import SolarDecommissioning from "./pages/SolarDecommissioning";
 
 // const develpomentServername = "/beyondrenewables";
 // const develpomentServername = "";
@@ -42,6 +43,10 @@ function App() {
           <Route
             path={`${serverLink}/solar-recycling`}
             element={<SolarRecycling />}
+          />
+          <Route
+            path={`${serverLink}/decommissioning`}
+            element={<SolarDecommissioning />}
           />
           <Route path={`${serverLink}/page-scroll`} element={<PageScroll />} />
           {/* Test pages */}

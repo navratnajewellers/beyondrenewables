@@ -16,6 +16,7 @@ const About = () => {
         <title>
           About Us | Beyond Renewables | Sustainability through Circularity
         </title>
+
         <meta
           name="description"
           content="Beyond Renewables | Sustainability through Circularity"

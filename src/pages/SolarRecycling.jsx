@@ -3,10 +3,29 @@ import "../styles/solarRecycling.css";
 import ScrollPage from "../components/ScrollPage";
 import WbHeader from "../components/WbHeader";
 import WbFooter from "../components/WbFooter";
+import { Helmet } from "react-helmet-async";
 
 const SolarRecycling = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Recycle with Beyond | Beyond Renewables | Sustainability through
+          Circularity
+        </title>
+        <meta
+          name="description"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="keywords"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="author"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+      </Helmet>
       <div>
         <ScrollPage />
       </div>

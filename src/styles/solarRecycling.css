@@ -1,9 +1,10 @@
 .sr-section1-container {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   min-height: 100dvh;
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .sr-sec1-img-container {

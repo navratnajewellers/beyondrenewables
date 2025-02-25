@@ -1,0 +1,115 @@
+.sd-section1-container {
+  /* border: solid 1px red; */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 0 45px;
+}
+
+.sd-sec1-row1-container {
+  /* border: solid 1px blue; */
+  padding-top: 45px;
+}
+
+.sd-sec1-row1-image {
+  /* border: solid 1px yellowgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 398px;
+}
+
+.sd-sec1-row1-image .imageWrapper {
+  height: 250px;
+  width: 400px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.sd-sec1-row1-image .imageWrapper::before {
+  content: "";
+  position: absolute;
+  width: 104%;
+  height: 106%;
+  top: -8px;
+  left: -8px;
+  border: solid 1px #ff8b38;
+}
+
+.sd-sec1-row1-image .imageWrapper img {
+  transition: all 0.3s ease;
+}
+
+.sd-sec1-row1-image .imageWrapper:hover img {
+  transform: scale(1.2);
+}
+
+.sd-sec1-row1-content {
+  /* border: solid 2px violet; */
+  padding: 35px 55px;
+}
+
+.sd-sec1-row1-content h4 {
+  margin-bottom: 15px;
+}
+
+.sd-sec1-row1-content p {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #cacaca;
+}
+
+.sd-sec1-row2-container {
+  /* border: solid 2px yellow; */
+  padding: 25px 45px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #cacaca;
+}
+
+.sd-sec1-row3-container {
+  /* border: solid 1px red; */
+  padding: 25px 45px;
+}
+
+.sd-sec1-row3-container p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+.sd-sec1-row4-container {
+  /* border: solid 1px blue; */
+  /* min-height: 50vh; */
+  padding: 15px 0 55px;
+}
+
+.sd-row4-container {
+  /* border: solid 2px yellow; */
+  padding: 15px;
+}
+
+.sd-row4-content {
+  border: dotted 0.1px #ffffff;
+  padding: 15px 25px;
+  height: 370px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.sd-row4-content:hover {
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Soft white glow */
+}
+
+.sd-row4-content p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 25px;
+}

@@ -12,12 +12,30 @@ import emailImage from "/images/email-img.jpeg";
 import phoneImage from "/images/phone-img.jpeg";
 import followImage from "/images/follow-img.jpeg";
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const [isMapLoading, setIsMapLoading] = useState(true);
 
   return (
     <div>
+      <Helmet>
+        <title>
+          Contact US | Beyond Renewables | Sustainability through Circularity
+        </title>
+        <meta
+          name="description"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="keywords"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="author"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+      </Helmet>
       <div>
         <ScrollPage />
       </div>

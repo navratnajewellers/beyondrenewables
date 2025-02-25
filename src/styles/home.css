@@ -26,8 +26,7 @@
   left: 0;
   background-image: url("/images/wind-1.jpg");
   background-size: cover; /* Cover the entire element */
-  /* background-attachment: fixed;  */
-  /* Fix the background while scrolling */
+  background-attachment: fixed; /* Fix the background while scrolling */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating */
   /* filter: brightness(90%); */
@@ -42,11 +41,17 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgba(182, 182, 182, 0.1) 40%,
     rgba(0, 0, 0, 0.8) 100%
-  );
+  ); */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* background-image: radial-gradient(
+    rgba(182, 182, 182, 0.1) 15%,
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.5) 70%
+  ); */
 }
 
 .home-section1-content {

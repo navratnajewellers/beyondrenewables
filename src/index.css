@@ -135,6 +135,10 @@ a:hover {
   color: #ff8b38 !important ;
 }
 
+.main-para-col {
+  color: #cacaca;
+}
+
 .carousel-img-container {
   /* border: solid 1px red; */
   padding-right: 15px;
@@ -173,26 +177,6 @@ a:hover {
   top: 0;
 }
 
-/* .carousel-link1::before {
-  content: "Glass Cutllets" !important;
-}
-
-.carousel-link2::before {
-  content: "Aluminium" !important;
-}
-
-.carousel-link3::before {
-  content: "Copper" !important;
-}
-
-.carousel-link4::before {
-  content: "Silver" !important;
-}
-
-.carousel-link5::before {
-  content: "Plastic Pyrolysis Oil" !important;
-} */
-
 .image-overlay-text {
   color: #ffffff;
   font-family: "Times New Roman", Times, serif;
@@ -204,6 +188,18 @@ a:hover {
 .contact-form-container {
   border-radius: 16px;
   padding: 45px 8%;
+}
+
+/* h2 header font text */
+.header-special-text {
+  position: relative;
+}
+
+.header-special-text::before {
+  content: "|";
+  position: absolute;
+  top: -1px;
+  left: -10px;
 }
 
 @media screen and (max-width: 640px) {

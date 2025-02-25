@@ -4,10 +4,28 @@ import WbHeader from "../components/WbHeader";
 import SolarBlog from "../components/SolarBlog";
 import { motion } from "motion/react";
 import WbFooter from "../components/WbFooter";
+import { Helmet } from "react-helmet-async";
 
 const Blog = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          Blog |Beyond Renewables | Sustainability through Circularity
+        </title>
+        <meta
+          name="description"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="keywords"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="author"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+      </Helmet>
       <div>
         <ScrollPage />
       </div>
