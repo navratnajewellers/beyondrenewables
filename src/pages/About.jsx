@@ -7,10 +7,28 @@ import WbFooter from "../components/WbFooter";
 import profileImage1 from "/images/t2.png";
 import profileImage2 from "/images/t3.png";
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          About Us | Beyond Renewables | Sustainability through Circularity
+        </title>
+        <meta
+          name="description"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="keywords"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="author"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+      </Helmet>
       <div>
         <ScrollPage />
       </div>

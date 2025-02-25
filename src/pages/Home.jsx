@@ -10,6 +10,7 @@ import SolarBlog from "../components/SolarBlog";
 import ContactForm from "../components/ContactForm";
 import WbFooter from "../components/WbFooter";
 import ScrollPage from "../components/ScrollPage";
+import { Helmet } from "react-helmet-async";
 // import { FaBeer } from "react-icons/fa";
 
 const Home = () => {
@@ -17,6 +18,36 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>
+          Beyond Renewables: Solar Panel Recycling for a Sustainable Future
+        </title>
+        <meta
+          name="description"
+          content="Beyond Renewables specializes in solar panel recycling, turning waste into sustainable solutions. Join us in fostering a cleaner, greener future today!"
+        />
+        <meta
+          name="keywords"
+          content="Beyond Renewables,Solar Panel Recycling for a Sustainable Future"
+        />
+        <meta name="author" content="https://beyondrenewables.in" />
+
+        <meta
+          name="description"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="keywords"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+        <meta
+          name="author"
+          content="Beyond Renewables | Sustainability through Circularity"
+        />
+
+        {/* <!-- Title of Site -->    <!-- Favicons -->    
+   <link rel="icon" type="image/png" href="assets/img/favicon-3.png">     */}
+      </Helmet>
       <div>
         <ScrollPage />
       </div>
