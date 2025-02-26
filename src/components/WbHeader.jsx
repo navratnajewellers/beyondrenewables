@@ -68,13 +68,11 @@ const WbHeader = () => {
                   <a href="/decommissioning">Decommissioning of Solar Assets</a>
                 </li>
                 <li>
-                  <a href="/solar-digitization ">
-                    Digitization of Solar Assets
-                  </a>
+                  <a href="/digitization ">Digitization of Solar Assets</a>
                 </li>
               </ul>
             </div>
-            <a href="#" className="header-main-item">
+            <a href="/product" className="header-main-item">
               <AnimatedText2 text={`Our Products`} />
             </a>
             <Link to={`${serverLink}/about`} className="header-main-item">

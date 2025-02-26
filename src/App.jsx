@@ -15,6 +15,11 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermCondition from "./pages/TermCondition";
 import SolarRecycling from "./pages/SolarRecycling";
 import SolarDecommissioning from "./pages/SolarDecommissioning";
+import SolarDigitization from "./pages/SolarDigitization";
+import Product from "./pages/Product";
+import SolarPVPanelRecycling from "./pages/SolarPVPanelRecycling";
+import Blog1 from "./pages/blogPage/Blog1";
+import Blog2 from "./pages/blogPage/Blog2";
 
 // const develpomentServername = "/beyondrenewables";
 // const develpomentServername = "";
@@ -47,6 +52,20 @@ function App() {
           <Route
             path={`${serverLink}/decommissioning`}
             element={<SolarDecommissioning />}
+          />
+          <Route
+            path={`${serverLink}/digitization`}
+            element={<SolarDigitization />}
+          />
+          <Route path={`${serverLink}/product`} element={<Product />} />
+          <Route
+            path={`${serverLink}/solar-pv-panel-recycling`}
+            element={<SolarPVPanelRecycling />}
+          />
+          <Route path={`${serverLink}/solar-panel-waste`} element={<Blog1 />} />
+          <Route
+            path={`${serverLink}/solar-panel-recyling`}
+            element={<Blog2 />}
           />
           <Route path={`${serverLink}/page-scroll`} element={<PageScroll />} />
           {/* Test pages */}

@@ -4,6 +4,7 @@ import WbHeader from "../components/WbHeader";
 import { Helmet } from "react-helmet-async";
 import "../styles/solarDecommissioning.css";
 import decommissionImage from "/images/solar-decommissioning-image-1.png";
+import WbFooter from "../components/WbFooter";
 
 const SolarDecommissioning = () => {
   return (
@@ -189,7 +190,18 @@ const SolarDecommissioning = () => {
               </li>
             </ul>
           </div>
+          <div className=" mt-4 ">
+            <p className="main-para-col">
+              <span className="main-color">At Beyond Renewables,</span> we
+              understand that effective decommissioning starts with meticulous
+              planning and robust logistics. Our approach to solar panel
+              decommissioning is built around these core principles:
+            </p>
+          </div>
         </Row>
+      </div>
+      <div>
+        <WbFooter />
       </div>
     </div>
   );
