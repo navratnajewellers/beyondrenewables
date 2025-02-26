@@ -62,17 +62,21 @@ const WbHeader = () => {
               </a>
               <ul className="header-sub-menu">
                 <li>
-                  <a href="/solar-recycling">Solar Recycling</a>
+                  <a href={`${serverLink}/solar-recycling`}>Solar Recycling</a>
                 </li>
                 <li>
-                  <a href="/decommissioning">Decommissioning of Solar Assets</a>
+                  <a href={`${serverLink}/decommissioning`}>
+                    Decommissioning of Solar Assets
+                  </a>
                 </li>
                 <li>
-                  <a href="/digitization ">Digitization of Solar Assets</a>
+                  <a href={`${serverLink}/digitization`}>
+                    Digitization of Solar Assets
+                  </a>
                 </li>
               </ul>
             </div>
-            <a href="/product" className="header-main-item">
+            <a href={`${serverLink}/product`} className="header-main-item">
               <AnimatedText2 text={`Our Products`} />
             </a>
             <Link to={`${serverLink}/about`} className="header-main-item">
@@ -86,7 +90,7 @@ const WbHeader = () => {
             </a>
           </nav>
           <nav className="header-started">
-            <a href="/contact" className="started-text">
+            <a href={`${serverLink}/contact`} className="started-text">
               Sell Your Panels
             </a>
           </nav>
@@ -119,7 +123,7 @@ const WbHeader = () => {
                 />
               </nav>
               <nav className="m-header-started">
-                <a href="/contact" className="m-started-text">
+                <a href={`${serverLink}/contact`} className="m-started-text">
                   Sell Your Panels
                 </a>
               </nav>
@@ -149,7 +153,7 @@ const WbHeader = () => {
             <div className="vertical_menu">
               <ul>
                 <li className="menu-item">
-                  <a href="/">Home</a>
+                  <a href={`${serverLink}/`}>Home</a>
                 </li>
                 <li className="menu-item-has-children">
                   <a href="#" onClick={() => setOpen(!open)}>
@@ -163,29 +167,33 @@ const WbHeader = () => {
                   </span>
                   <ul className={`sub-menu ${open ? "open" : ""}`}>
                     <li>
-                      <a href="/solar-recycling">Solar Recycling</a>
+                      <a href={`${serverLink}/solar-recycling`}>
+                        Solar Recycling
+                      </a>
                     </li>
                     <li>
-                      <a href="/decommissioning">
+                      <a href={`${serverLink}/decommissioning`}>
                         Decommissioning of Solar Assets
                       </a>
                     </li>
                     <li>
-                      <a href="/digitization">Digitization of Solar Assets</a>
+                      <a href={`${serverLink}/digitization`}>
+                        Digitization of Solar Assets
+                      </a>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <a href="/products">Our Products</a>
+                  <a href={`${serverLink}/product`}>Our Products</a>
                 </li>
                 <li className="menu-item">
-                  <a href="/about">About</a>
+                  <a href={`${serverLink}/about`}>About</a>
                 </li>
                 <li className="menu-item">
-                  <a href="/blog">Blog</a>
+                  <a href={`${serverLink}/blog`}>Blog</a>
                 </li>
                 <li className="menu-item">
-                  <a href="/contact">Contact</a>
+                  <a href={`${serverLink}/contact`}>Contact</a>
                 </li>
               </ul>
             </div>
