@@ -103,3 +103,33 @@
 .b-sec5-header h2 {
   margin-bottom: 15px;
 }
+
+@media screen and (max-width: 640px) {
+  .blog1-container {
+    padding: 75px 10px;
+  }
+
+  .blog1-section1-container .imageWrapper {
+    height: 190px;
+  }
+
+  .b-sec3-content {
+    flex-direction: column;
+  }
+
+  .blog-content-icon {
+    margin-bottom: 15px;
+  }
+
+  .blog-content-icon svg {
+    transform: rotate(90deg);
+  }
+
+  .blog1-section4-container .imageWrapper {
+    height: 190px;
+  }
+
+  .b-sec1-details {
+    text-align: center;
+  }
+}

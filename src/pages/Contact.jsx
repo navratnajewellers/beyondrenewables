@@ -2,17 +2,12 @@ import { Breadcrumb, Col, Loader, Row } from "rsuite";
 import ScrollPage from "../components/ScrollPage";
 import WbHeader from "../components/WbHeader";
 import "../styles/contact.css";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import ContactForm from "../components/ContactForm";
 import WbFooter from "../components/WbFooter";
 import { useState } from "react";
-import locationImage from "/images/location-img.jpeg";
-import emailImage from "/images/email-img.jpeg";
-import phoneImage from "/images/phone-img.jpeg";
-import followImage from "/images/follow-img.jpeg";
 import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 const Contact = () => {
   const [isMapLoading, setIsMapLoading] = useState(true);
@@ -71,71 +66,46 @@ const Contact = () => {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <div className="ct-contact-container">
-            <div className="imageWrapper">
-              <img src={locationImage} />
+          <div className="ct-sec1-content-detail">
+            <div className="ct-sec1-content-image">
+              <FaPhoneVolume />
             </div>
-            <div className="ct-contact-details-container">
-              <div className="ct-contact-details">
-                <h5>Our Addresses:</h5>
-                <p>
+            <div>
+              <p>Phone :</p>
+              <h5>
+                <a href="tel:+918340325075" className="main-color">
+                  +91 8340-325075
+                </a>
+              </h5>
+            </div>
+          </div>
+          <div className="ct-sec1-content-detail">
+            <div className="ct-sec1-content-image">
+              <FaPhoneVolume />
+            </div>
+            <div>
+              <p>Email Address :</p>
+              <h5>
+                <a
+                  href="mailto:info@beyondrenewables.in"
+                  className="main-color"
+                >
+                  info@beyondrenewables.in
+                </a>
+              </h5>
+            </div>
+          </div>
+          <div className="ct-sec1-content-detail">
+            <div className="ct-sec1-content-image">
+              <FaPhoneVolume />
+            </div>
+            <div>
+              <p>Location :</p>
+              <h5>
+                <a href="#" className="main-color">
                   1505/1506, Hemkunt Tower, 98, Nehru Place, New delhi - 110019
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="ct-contact-container">
-            <div className="imageWrapper">
-              <img src={emailImage} />
-            </div>
-
-            <div className="ct-contact-details-container">
-              <div className="ct-contact-details">
-                <h5>Emails:</h5>
-                <p>
-                  <a href="mailto:info@beyondrenewables.in">
-                    info@beyondrenewables.in
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="ct-contact-container">
-            <div className="imageWrapper">
-              <img src={phoneImage} />
-            </div>
-
-            <div className="ct-contact-details-container">
-              <div className="ct-contact-details">
-                <h5>Phones:</h5>
-                <p>
-                  <a href="tel:+91 8340-325075">+91 8340-325075</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="ct-contact-container">
-            <div className="imageWrapper">
-              <img src={followImage} />
-            </div>
-            <div className="ct-contact-details-container">
-              <div className="ct-contact-details">
-                <h5>Follow Us:</h5>
-                <div className=" flex justify-evenly ct-social-icon-container  ">
-                  <a href="#">
-                    <FaFacebookF />
-                  </a>
-                  <a href="#">
-                    <FaLinkedinIn />
-                  </a>
-                  <a href="#">
-                    <FaXTwitter />
-                  </a>
-                  <a href="#">
-                    <FaInstagram />
-                  </a>
-                </div>
-              </div>
+                </a>
+              </h5>
             </div>
           </div>
         </motion.div>

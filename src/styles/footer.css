@@ -69,14 +69,23 @@
   display: block;
 }
 
+.ft-sec2-social-icon-container {
+  justify-content: center;
+}
+
 .ft-sec2-social-icon-container a {
   color: #ff8b38 !important;
   transition: all 0.3s ease;
+  margin-right: 15px;
 }
 
 .ft-sec2-social-icon-container a:hover {
   color: #ffffff !important;
   scale: 1.5;
+}
+
+.ft-sec2-social-icon-container a:last-child {
+  margin-right: 0;
 }
 
 .footer-copyright-container {
@@ -85,15 +94,14 @@
   background-color: black;
   color: #cccccc;
   font-size: 16px;
-  font-family: "Vollkorn", "Times New Roman", Times, serif;
 }
 
 .ft-cp-sec1 a {
   margin-left: 8px;
   color: #ff8b38 !important;
-  font-family: "Delicious Handrawn", "Times New Roman", Times, serif;
   font-size: 19px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .ft-cp-sec2 {

@@ -122,10 +122,12 @@ const ScrollPage = () => {
           onClick={() =>
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
           }
-          style={{ cursor: "pointer", fontSize: "22px" }}
+          style={{ cursor: "pointer" }}
+          className="scroll-text"
         >
           {/* {Math.round(scrollPercent)}% */}
-          &uarr;
+          {/* &uarr;  */}
+          BR
         </text>
       </svg>
     </motion.div>

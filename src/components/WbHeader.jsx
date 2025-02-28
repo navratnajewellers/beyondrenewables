@@ -1,6 +1,6 @@
 import { Affix, Drawer, useMediaQuery } from "rsuite";
 import "../styles/header.css";
-import companyLogo from "/images/logo-33_2.png";
+// import companyLogo from "/images/logo-33_2.png";
 import mobileCompanyLogo from "/images/logo-1.png";
 import AnimatedText2 from "./AnimatedText2";
 // import AnimatedText3 from "./AnimatedText3";
@@ -43,7 +43,7 @@ const WbHeader = () => {
         <header className="header-container flex">
           <a href={`${serverLink}/`} className="logo imageWrapper">
             <img
-              src={companyLogo}
+              src={mobileCompanyLogo}
               alt="Transparent"
               className={`bg-transparent header-logo`}
               id="headerLogo"

@@ -2,8 +2,8 @@ import { Col, Container, Divider, Row } from "rsuite";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 import AnimatedText from "./AnimatedText";
 import companyLogo from "/images/logo-33.webp";
 import { useServerLink } from "../context/server.context";
@@ -75,16 +75,11 @@ const WbFooter = () => {
               >
                 <img src={companyLogo} />
               </a>
-              <div className=" flex justify-evenly m-4 ft-sec2-social-icon-container ">
-                <a href="#">
-                  <FaFacebookF />
-                </a>
-                <a href="#">
+              <div className=" flex m-4 ft-sec2-social-icon-container ">
+                <a href="https://linkedin.com/company/beyond-renewables">
                   <FaLinkedinIn />
                 </a>
-                <a href="#">
-                  <FaXTwitter />
-                </a>
+
                 <a href="#">
                   <FaInstagram />
                 </a>
@@ -96,15 +91,15 @@ const WbFooter = () => {
               <h4>Services</h4>
               <ul className="sec2-ul">
                 <li>
-                  <a href="solar-recycling">Solar Recycling</a>
+                  <a href={`${serverLink}/solar-recycling`}>Solar Recycling</a>
                 </li>
                 <li>
-                  <a href="decommissioning-solar-panels">
+                  <a href={`${serverLink}/decommissioning`}>
                     Decommissioning of solar panels
                   </a>
                 </li>
                 <li>
-                  <a href="digitization-solar-panels">
+                  <a href={`${serverLink}/digitization`}>
                     Digitization of solar panels
                   </a>
                 </li>
