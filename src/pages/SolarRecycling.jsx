@@ -4,6 +4,7 @@ import ScrollPage from "../components/ScrollPage";
 import WbHeader from "../components/WbHeader";
 import WbFooter from "../components/WbFooter";
 import { Helmet } from "react-helmet-async";
+import { motion } from "motion/react";
 
 const SolarRecycling = () => {
   return (
@@ -53,6 +54,10 @@ const SolarRecycling = () => {
             md={12}
             lg={12}
             className="sr-sec1-img-container"
+            as={motion.section}
+            initial={{ opacity: 0, translateY: 45 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <div className="imageWrapper">
               <img src="/images/consultation2.jpeg" />
@@ -64,6 +69,10 @@ const SolarRecycling = () => {
             md={12}
             lg={12}
             className="sr-sec1-content-container"
+            as={motion.section}
+            initial={{ opacity: 0, translateY: 45 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <div className="sr-sec1-header">
               <h4 className="main-color">Solar Panel</h4>

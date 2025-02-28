@@ -6,13 +6,15 @@ import "../../styles/blog1.css";
 import { FaGripLinesVertical } from "react-icons/fa6";
 import blogImage2 from "/images/blog-2.jpg";
 import WbFooter from "../../components/WbFooter";
+import { motion } from "motion/react";
 
 const Blog2 = () => {
   return (
     <div>
       <Helmet>
         <title>
-          About Us | Beyond Renewables | Sustainability through Circularity
+          Solar Panel Recyling: Perfecting the Path to a Circular Future |
+          Beyond Renewables | Sustainability through Circularity
         </title>
 
         <meta
@@ -50,7 +52,12 @@ const Blog2 = () => {
         </Breadcrumb>
       </div>
       <div className="blog1-container">
-        <section className="blog1-section1-container">
+        <motion.section
+          className="blog1-section1-container"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div className="b-sec1-details">
             <div>
               <h4 className="main-color">Manhar Dixit</h4>
@@ -64,9 +71,15 @@ const Blog2 = () => {
               <h4>Solar Panel</h4>
             </div>
           </div>
-        </section>
+        </motion.section>
         <section className="blog1-section5-container">
-          <Row className="b-sec5-header">
+          <Row
+            className="b-sec5-header"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 45 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <h2>
               Solar Panel Recyling: Perfecting the Path to a Circular Future
             </h2>
@@ -80,7 +93,13 @@ const Blog2 = () => {
               innovators, can turn this nuisance into an opportunity.
             </p>
           </Row>
-          <Row className="b-sec3-content">
+          <Row
+            className="b-sec3-content"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 45 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="blog-content-icon main-color ">
               <FaGripLinesVertical />
             </div>
@@ -98,7 +117,12 @@ const Blog2 = () => {
           </Row>
         </section>
         <Divider />
-        <section className="blog1-section4-container">
+        <motion.div
+          className="blog1-section4-container"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div>
             <h2>Recycling Technologies for Solar Panels</h2>
           </div>
@@ -139,9 +163,14 @@ const Blog2 = () => {
               </li>
             </ul>
           </div>
-        </section>
+        </motion.div>
         <Divider />
-        <section className="blog1-section5-container">
+        <motion.section
+          className="blog1-section5-container"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Row className="b-sec5-header">
             <h2>Economic Viability and Challenges</h2>
             <p className="main-para-col">
@@ -161,9 +190,14 @@ const Blog2 = () => {
               the overall economic viability of solar recycling operations.
             </p>
           </Row>
-        </section>
+        </motion.section>
         <Divider />
-        <section className="blog1-section5-container">
+        <motion.section
+          className="blog1-section5-container"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Row className="b-sec5-header">
             <h2>The Role of Recovered Materials in a Circular Economy</h2>
             <p className="main-para-col">
@@ -184,9 +218,14 @@ const Blog2 = () => {
               critical.
             </p>
           </Row>
-        </section>
+        </motion.section>
         <Divider />
-        <section className="blog1-section5-container">
+        <motion.section
+          className="blog1-section5-container"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Row className="b-sec5-header">
             <h2>Conclusion: A Sustainable Path Forward</h2>
             <p className="main-para-col">
@@ -208,7 +247,7 @@ const Blog2 = () => {
               nation&apos;s broader goals of sustainability and energy security.
             </p>
           </Row>
-        </section>
+        </motion.section>
       </div>
       <div>
         <WbFooter />

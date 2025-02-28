@@ -5,6 +5,7 @@ import ScrollPage from "../components/ScrollPage";
 import "../styles/product.css";
 import { useServerLink } from "../context/server.context";
 import WbFooter from "../components/WbFooter";
+import { motion } from "motion/react";
 
 const Product = () => {
   const { serverLink } = useServerLink();
@@ -64,7 +65,8 @@ const Product = () => {
     <div>
       <Helmet>
         <title>
-          About Us | Beyond Renewables | Sustainability through Circularity
+          Solar PV Panel Recycling | Beyond Renewables | Sustainability through
+          Circularity
         </title>
 
         <meta
@@ -100,29 +102,48 @@ const Product = () => {
         </Breadcrumb>
       </div>
       <div className="p-section1-container">
-        <h4 className="header-special-text">Solar PV Panel Recycling:</h4>
-        <h3 className="main-color">Our Commitment to a Sustainable Future:</h3>
-        <p>
-          At Beyond, we specialize in recycling solar PV panels using
-          cutting-edge technology to ensure minimal environmental impact and
-          maximum resource recovery. Our advanced processes safely dismantle and
-          reclaim valuable materials, including high-purity silicon, glass
-          cullets, aluminium, copper wire, and silver, ready for reuse in new
-          solar panel production and other applications. By reintegrating these
-          materials into the supply chain, beyond drives the development of a
-          circular economy in the solar industry. Our methods significantly
-          reduce waste and resource consumption, while lowering CO2 emissions,
-          fostering both environmental and economic sustainability.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <h4 className="header-special-text">Solar PV Panel Recycling:</h4>
+          <h3 className="main-color">
+            Our Commitment to a Sustainable Future:
+          </h3>
+          <p>
+            At Beyond, we specialize in recycling solar PV panels using
+            cutting-edge technology to ensure minimal environmental impact and
+            maximum resource recovery. Our advanced processes safely dismantle
+            and reclaim valuable materials, including high-purity silicon, glass
+            cullets, aluminium, copper wire, and silver, ready for reuse in new
+            solar panel production and other applications. By reintegrating
+            these materials into the supply chain, beyond drives the development
+            of a circular economy in the solar industry. Our methods
+            significantly reduce waste and resource consumption, while lowering
+            CO2 emissions, fostering both environmental and economic
+            sustainability.
+          </p>
+        </motion.div>
       </div>
       <div className="p-section2-container">
-        <div className="p-sec2-header custom-flex flex-col  ">
+        <motion.div
+          className="p-sec2-header custom-flex flex-col "
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className=" main-color header-special-text">
             Solar PV Panel Recycling:
           </h4>
           <h2>Materials recovered after recycling</h2>
-        </div>
-        <div className="p-sec2-content-container">
+        </motion.div>
+        <motion.div
+          className="p-sec2-content-container"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           {productsDetails.map((data) => (
             <div key={data.id} className="p-sec2-content">
               <div className="imageWrapper">
@@ -142,10 +163,16 @@ const Product = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
       <div className="p-section-detail-container">
-        <Row className="p-sd-row-container">
+        <Row
+          className="p-sd-row-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">Partner with Us</h3>
           <p>
             This is a call to companies and corporates with ESG mandates and
@@ -158,7 +185,13 @@ const Product = () => {
             completing the loop.
           </p>
         </Row>
-        <Row className="p-sd-row-container grey-container ">
+        <Row
+          className="p-sd-row-container grey-container "
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">Use-cases in Industries beyond Solar</h3>
           <ul>
             <li>Recycled Glass Cullets</li>
@@ -175,7 +208,13 @@ const Product = () => {
             </li>
           </ul>
         </Row>
-        <Row className="p-sd-row-container">
+        <Row
+          className="p-sd-row-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">Recycled Copper Wire</h3>
           <ul>
             <li>
@@ -195,7 +234,13 @@ const Product = () => {
             </li>
           </ul>
         </Row>
-        <Row className="p-sd-row-container grey-container ">
+        <Row
+          className="p-sd-row-container grey-container "
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">Recycled Silicon</h3>
           <ul>
             <li>
@@ -214,7 +259,13 @@ const Product = () => {
             </li>
           </ul>
         </Row>
-        <Row className="p-sd-row-container">
+        <Row
+          className="p-sd-row-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">Recycled Silver</h3>
           <ul>
             <li>
@@ -234,7 +285,13 @@ const Product = () => {
             </li>
           </ul>
         </Row>
-        <Row className="p-sd-row-container grey-container ">
+        <Row
+          className="p-sd-row-container grey-container "
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">Recycled Aluminium</h3>
           <ul>
             <li>

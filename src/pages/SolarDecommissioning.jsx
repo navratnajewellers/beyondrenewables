@@ -5,13 +5,15 @@ import { Helmet } from "react-helmet-async";
 import "../styles/solarDecommissioning.css";
 import decommissionImage from "/images/solar-decommissioning-image-1.png";
 import WbFooter from "../components/WbFooter";
+import { motion } from "motion/react";
 
 const SolarDecommissioning = () => {
   return (
     <div>
       <Helmet>
         <title>
-          About Us | Beyond Renewables | Sustainability through Circularity
+          Decommissioning of Solar Assets | Beyond Renewables | Sustainability
+          through Circularity
         </title>
 
         <meta
@@ -47,7 +49,13 @@ const SolarDecommissioning = () => {
         </Breadcrumb>
       </div>
       <div className="sd-section1-container">
-        <Row className="sd-sec1-row1-container">
+        <Row
+          className="sd-sec1-row1-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Col xs={24} sm={24} md={12} lg={12} className="sd-sec1-row1-image">
             <div className="imageWrapper">
               <img src={decommissionImage} />
@@ -71,7 +79,13 @@ const SolarDecommissioning = () => {
             </div>
           </Col>
         </Row>
-        <Row className="sd-sec1-row2-container">
+        <Row
+          className="sd-sec1-row2-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <p>
             Decommissioning solar panels is a critical aspect of the solar
             lifecycle, particularly as panels begin to degrade and reach the end
@@ -83,7 +97,13 @@ const SolarDecommissioning = () => {
             panels and other high-tech applications.
           </p>
         </Row>
-        <Row className="sd-sec1-row3-container">
+        <Row
+          className="sd-sec1-row3-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div>
             <h4 className="main-color">
               Planning and Logistics: The Backbone of Effective Decommissioning
@@ -96,7 +116,13 @@ const SolarDecommissioning = () => {
             </p>
           </div>
         </Row>
-        <Row className="sd-sec1-row4-container">
+        <Row
+          className="sd-sec1-row4-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Col xs={24} sm={24} md={8} lg={8} className="sd-row4-container">
             <div className="sd-row4-content">
               <h4 className="main-color">Comprehensive Site Assessments</h4>
@@ -139,7 +165,13 @@ const SolarDecommissioning = () => {
           </Col>
         </Row>
         <Divider />
-        <Row className="sd-sec1-row5-container">
+        <Row
+          className="sd-sec1-row5-container"
+          as={motion.section}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div>
             <h2 className="main-color">
               Beyond Renewables’ Decommissioning Services

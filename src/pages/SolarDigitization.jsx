@@ -4,13 +4,15 @@ import { Breadcrumb, Col, Row } from "rsuite";
 import WbHeader from "../components/WbHeader";
 import "../styles/solarDigitization.css";
 import WbFooter from "../components/WbFooter";
+import { motion } from "motion/react";
 
 const SolarDigitization = () => {
   return (
     <div>
       <Helmet>
         <title>
-          About Us | Beyond Renewables | Sustainability through Circularity
+          Digitization of the PV Economy | Beyond Renewables | Sustainability
+          through Circularity
         </title>
 
         <meta
@@ -46,7 +48,11 @@ const SolarDigitization = () => {
         </Breadcrumb>
       </div>
       <div className="dt-section1-container">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className="main-color header-special-text ">Solar Panel</h4>
           <h2>Digitization of the PV Economy</h2>
           <p className="main-para-col">
@@ -59,8 +65,12 @@ const SolarDigitization = () => {
             solar projects are managed in India, ensuring efficiency,
             sustainability, and accountability at every stage.
           </p>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h3 className="main-color">
             What is Digitization of the PV Economy?
           </h3>
@@ -76,14 +86,24 @@ const SolarDigitization = () => {
             every solar panel is utilized to its fullest potential before
             reaching its endof-life.
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="dt-section2-container">
-        <div className="dt-sec2-header">
+        <motion.div
+          className="dt-sec2-header"
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h4 className="main-color">Our Solutions</h4>
           <h2>Key Features and Benefits</h2>
-        </div>
-        <Row>
+        </motion.div>
+        <Row
+          as={motion.div}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Col xs={24} sm={24} md={12} lg={12}>
             <div className="dt-sec2-content">
               <h4>
@@ -123,7 +143,13 @@ const SolarDigitization = () => {
             </div>
           </Col>
         </Row>
-        <Row className="dt-sec2-content-container2">
+        <Row
+          className="dt-sec2-content-container2"
+          as={motion.div}
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Col xs={24} sm={24} md={12} lg={12}>
             <div className="dt-sec2-content">
               <h4>
@@ -161,22 +187,28 @@ const SolarDigitization = () => {
         </Row>
       </div>
       <div className="dt-section3-container">
-        <h3 className="main-color">The Future of Solar in India</h3>
-        <p className="main-para-col">
-          Beyond Renewables is committed to leading the way in the digitization
-          of the PV economy in India. As we develop and implement this
-          cutting-edge technology, we are laying the foundation for a future
-          where solar energy is not only a source of clean power but also a
-          model of efficiency and sustainability. By ensuring that every solar
-          panel is tracked, managed, and recycled responsibly, we are helping to
-          create a truly circular economy that benefits both the environment and
-          the economy.
-        </p>
-        <p className="main-para-col">
-          Join us on this journey to a smarter, more sustainable solar future.
-          At Beyond Renewables, we are not just imagining the future of solar
-          energy—we are building it.
-        </p>
+        <motion.section
+          initial={{ opacity: 0, translateY: 45 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <h3 className="main-color">The Future of Solar in India</h3>
+          <p className="main-para-col">
+            Beyond Renewables is committed to leading the way in the
+            digitization of the PV economy in India. As we develop and implement
+            this cutting-edge technology, we are laying the foundation for a
+            future where solar energy is not only a source of clean power but
+            also a model of efficiency and sustainability. By ensuring that
+            every solar panel is tracked, managed, and recycled responsibly, we
+            are helping to create a truly circular economy that benefits both
+            the environment and the economy.
+          </p>
+          <p className="main-para-col">
+            Join us on this journey to a smarter, more sustainable solar future.
+            At Beyond Renewables, we are not just imagining the future of solar
+            energy—we are building it.
+          </p>
+        </motion.section>
       </div>
       <div>
         <WbFooter />

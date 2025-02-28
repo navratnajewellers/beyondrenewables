@@ -7,13 +7,15 @@ import "../../styles/blog1.css";
 import WbFooter from "../../components/WbFooter";
 import blogImage1 from "/images/blog-1.jpg";
 import blogImage2 from "/images/blog-2.jpg";
+import { motion } from "motion/react";
 
 const Blog1 = () => {
   return (
     <div>
       <Helmet>
         <title>
-          About Us | Beyond Renewables | Sustainability through Circularity
+          Solar Panel Waste: Numbers and Nuisance | Beyond Renewables |
+          Sustainability through Circularity
         </title>
         <meta
           name="description"
@@ -48,7 +50,12 @@ const Blog1 = () => {
         </Breadcrumb>
       </div>
       <div className="blog1-container">
-        <section className="blog1-section1-container">
+        <motion.section
+          className="blog1-section1-container"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div className="imageWrapper">
             <img src={blogImage1} />
           </div>
@@ -65,8 +72,13 @@ const Blog1 = () => {
               <h4>Solar Panel</h4>
             </div>
           </div>
-        </section>
-        <section className="blog1-section2-container">
+        </motion.section>
+        <motion.section
+          className="blog1-section2-container"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <h2>Solar Panel Waste: Numbers and Nuisance</h2>
           <p className="main-para-col">
             As a co-founder at BEYOND, I&apos;m deeply passionate about leading
@@ -77,9 +89,15 @@ const Blog1 = () => {
             issue and explore how we, as entrepreneurs and innovators, can turn
             this nuisance into an opportunity.
           </p>
-        </section>
+        </motion.section>
         <section className="blog1-section3-container">
-          <Row className="b-sec3-content">
+          <Row
+            className="b-sec3-content"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="blog-content-icon main-color ">
               <FaGripLinesVertical />
             </div>
@@ -97,7 +115,13 @@ const Blog1 = () => {
               </p>
             </div>
           </Row>
-          <Row className="b-sec3-content">
+          <Row
+            className="b-sec3-content"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="blog-content-icon main-color ">
               <FaGripLinesVertical />
             </div>
@@ -118,7 +142,13 @@ const Blog1 = () => {
               </p>
             </div>
           </Row>
-          <Row className="b-sec3-content">
+          <Row
+            className="b-sec3-content"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="blog-content-icon main-color ">
               <FaGripLinesVertical />
             </div>
@@ -136,7 +166,13 @@ const Blog1 = () => {
               </p>
             </div>
           </Row>
-          <Row className="b-sec3-content">
+          <Row
+            className="b-sec3-content"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="blog-content-icon main-color ">
               <FaGripLinesVertical />
             </div>
@@ -154,7 +190,13 @@ const Blog1 = () => {
               </p>
             </div>
           </Row>
-          <Row className="b-sec3-content">
+          <Row
+            className="b-sec3-content"
+            as={motion.div}
+            initial={{ opacity: 0, translateY: 25 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
             <div className="blog-content-icon main-color ">
               <FaGripLinesVertical />
             </div>
@@ -172,7 +214,12 @@ const Blog1 = () => {
           </Row>
         </section>
         <Divider />
-        <section className="blog1-section4-container">
+        <motion.section
+          className="blog1-section4-container"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <div>
             <h2>BEYOND&apos;s Vision for a Circular Solar Economy</h2>
           </div>
@@ -215,9 +262,14 @@ const Blog1 = () => {
               </li>
             </ul>
           </div>
-        </section>
+        </motion.section>
         <Divider />
-        <section className="blog1-section5-container">
+        <motion.section
+          className="blog1-section5-container"
+          initial={{ opacity: 0, translateY: 25 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
           <Row className="b-sec5-header">
             <h2>Leading by Example</h2>
             <p className="main-para-col">
@@ -247,7 +299,7 @@ const Blog1 = () => {
               </p>
             </div>
           </Row>
-        </section>
+        </motion.section>
       </div>
       <div>
         <WbFooter />
