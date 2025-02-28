@@ -182,10 +182,10 @@ export default function ContactForm() {
 
     emailjs
       .send(
-        "YOUR_SERVICE_ID", // Replace with Email.js service ID
-        "YOUR_TEMPLATE_ID", // Replace with Email.js template ID
+        "service_wadew4d", // Replace with Email.js service ID
+        "template_my8byso", // Replace with Email.js template ID
         formData,
-        "YOUR_PUBLIC_KEY" // Replace with Email.js public key
+        "tG6JhuQ9EkeZzXpmv" // Replace with Email.js public key
       )
       .then(() => {
         toaster.push(
