@@ -2,11 +2,8 @@
 import { useServerLink } from "./context/server.context";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import ScrollTry from "./pages/ScrollTry";
-import PageScroll from "./PageScroll";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import TestOverlay from "./test/TestOverlay";
 import About from "./pages/About";
 import PageLoader from "./components/PageLoader";
 import Contact from "./pages/Contact";
@@ -66,13 +63,6 @@ function App() {
           <Route
             path={`${serverLink}/solar-panel-recyling`}
             element={<Blog2 />}
-          />
-          <Route path={`${serverLink}/page-scroll`} element={<PageScroll />} />
-          {/* Test pages */}
-          <Route path={`${serverLink}/scrolltry`} element={<ScrollTry />} />
-          <Route
-            path={`${serverLink}/test-overlay`}
-            element={<TestOverlay />}
           />
           <Route path="*" element={<NotFound />} />
         </Routes>
