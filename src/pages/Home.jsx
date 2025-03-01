@@ -14,6 +14,8 @@ import { Helmet } from "react-helmet-async";
 // import { FaBeer } from "react-icons/fa";
 
 const Home = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   const { serverLink } = useServerLink();
 
   return (
@@ -44,9 +46,6 @@ const Home = () => {
           name="author"
           content="Beyond Renewables | Sustainability through Circularity"
         />
-
-        {/* <!-- Title of Site -->    <!-- Favicons -->    
-   <link rel="icon" type="image/png" href="assets/img/favicon-3.png">     */}
       </Helmet>
       <div>
         <ScrollPage />
@@ -56,8 +55,19 @@ const Home = () => {
       </div>
       <div>
         <div className="home-section-1">
-          {/* <img src="/images/wind-1.jpg" /> */}
-          <div className="home-section1-bg-img"></div>
+          <div className="home-section1-bg-img">
+            <video
+              className="home-sec1-bg-video"
+              src={`${serverLink}/videos/homeVideo.MP4`}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+              // style={{ width: "100%", height: "100%" }}
+            />
+          </div>
           <motion.div
             className=" flex flex-col home-section1-content "
             initial={{ opacity: 0, translateY: 65 }}
@@ -85,7 +95,7 @@ const Home = () => {
           </div>
           <div className=" w-full section2-accordion">
             <Accordion
-              defaultActiveKey={1}
+              // defaultActiveKey={1}
               bordered
               className="section-accor-con"
             >
@@ -95,7 +105,7 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col
+                  {/* <Col
                     xs={24}
                     sm={24}
                     md={10}
@@ -108,11 +118,10 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper ">
-                        {/* <img src={`${serverLink}/images/section2-image1.png`} /> */}
                         <img src={`${serverLink}/images/solar-panel.png`} />
                       </div>
                     </motion.div>
-                  </Col>
+                  </Col> */}
                   <Col xs={24} sm={24} md={14} lg={14}>
                     <div className="sec2-panel-content">
                       <motion.div
@@ -143,7 +152,7 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col
+                  {/* <Col
                     xs={24}
                     sm={24}
                     md={10}
@@ -156,11 +165,10 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper">
-                        {/* <img src={`${serverLink}/images/section2-image2.png`} /> */}
                         <img src={`${serverLink}/images/solar-energy.png`} />
                       </div>
                     </motion.div>
-                  </Col>
+                  </Col> */}
                   <Col xs={24} sm={24} md={14} lg={14}>
                     <div className="sec2-panel-content">
                       <motion.div
@@ -192,7 +200,7 @@ const Home = () => {
                 className="section2-acc-panel"
               >
                 <Row className="sec2-content-cont custom-flex ">
-                  <Col
+                  {/* <Col
                     xs={24}
                     sm={24}
                     md={10}
@@ -205,13 +213,12 @@ const Home = () => {
                       transition={{ duration: 0.6 }}
                     >
                       <div className="imageWrapper">
-                        {/* <img src={`${serverLink}/images/section2-image3.png`} /> */}
                         <img
                           src={`${serverLink}/images/renewable-energy.png`}
                         />
                       </div>
                     </motion.div>
-                  </Col>
+                  </Col> */}
                   <Col xs={24} sm={24} md={14} lg={14}>
                     <div className="sec2-panel-content">
                       <motion.div
@@ -238,7 +245,7 @@ const Home = () => {
         </div>
         <Row className="home-section3 flex  ">
           <div className="home-section3-bg"></div>
-          <Col xs={24} sm={24} md={14} lg={14} className="sec3-content">
+          <Col xs={24} sm={24} md={20} lg={20} className="sec3-content">
             <motion.div
               className=" flex flex-col text-center "
               initial={{ opacity: 0, translateY: 25 }}
@@ -256,7 +263,7 @@ const Home = () => {
               </p>
             </motion.div>
           </Col>
-          <Col
+          {/* <Col
             xs={24}
             sm={24}
             md={10}
@@ -271,7 +278,7 @@ const Home = () => {
             >
               <img src={`${serverLink}/images/about-4.png`} />
             </motion.div>
-          </Col>
+          </Col> */}
         </Row>
         <div className="home-section4 ">
           <Row
@@ -443,14 +450,6 @@ const Home = () => {
         <div>
           <WbFooter />
         </div>
-      </div>
-      <div>
-        {/* <h3>
-          {" "}
-          Lets go for a <FaBeer />?{" "}
-        </h3> */}
-        {/* <Link to="/beyondrenewables/page-scroll">Scroll Page</Link> */}
-        {/* <Link to={`${serverLink}/page-scroll`}>Scroll Page</Link> */}
       </div>
     </div>
   );

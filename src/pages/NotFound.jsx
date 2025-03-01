@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useServerLink } from "../context/server.context";
 
 const NotFound = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   const { serverLink } = useServerLink();
 
   return (

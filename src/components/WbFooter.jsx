@@ -1,5 +1,7 @@
 import { Col, Container, Divider, Row } from "rsuite";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import { IoIosMail } from "react-icons/io";
+import { IoLocation } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -38,7 +40,7 @@ const WbFooter = () => {
             className=" flex sec1-content-container "
           >
             <div className="footer-row1-icon-container">
-              <BiSolidPhoneCall />
+              <IoIosMail />
             </div>
             <div>
               <h5>Support & Email</h5>
@@ -55,12 +57,13 @@ const WbFooter = () => {
             className=" flex sec1-content-container "
           >
             <div className="footer-row1-icon-container">
-              <BiSolidPhoneCall />
+              <IoLocation />
             </div>
             <div>
               <h5>Our Location</h5>
               <Link to="https://google.com/maps">
-                1505/1506, Hemkunt Tower, 98, Nehru Place, New delhi - 110019
+                WeWork Eldeco Centre, Block A, Shivalik Colony, Malviya Nagar,
+                Delhi, New Delhi, Delhi 110017
               </Link>
             </div>
           </Col>
@@ -139,8 +142,8 @@ const WbFooter = () => {
                 </li>
                 <li>
                   <a href="#">
-                    1505/1506, Hemkunt Tower, 98, Nehru Place, New delhi -
-                    110019
+                    WeWork Eldeco Centre, Block A, Shivalik Colony, Malviya
+                    Nagar, Delhi, New Delhi, Delhi 110017
                   </a>
                 </li>
               </ul>

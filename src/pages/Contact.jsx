@@ -11,6 +11,8 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { useServerLink } from "../context/server.context";
 
 const Contact = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   const { serverLink } = useServerLink();
 
   const [isMapLoading, setIsMapLoading] = useState(true);

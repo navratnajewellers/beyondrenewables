@@ -126,8 +126,8 @@ const ScrollPage = () => {
           className="scroll-text"
         >
           {/* {Math.round(scrollPercent)}% */}
-          {/* &uarr;  */}
-          BR
+          &uarr;
+          {/* BR */}
         </text>
       </svg>
     </motion.div>

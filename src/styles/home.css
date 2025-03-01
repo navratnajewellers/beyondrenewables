@@ -24,13 +24,41 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("/images/wind-1.jpg");
-  background-size: cover; /* Cover the entire element */
-  background-attachment: fixed; /* Fix the background while scrolling */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating */
-  /* filter: brightness(90%); */
+  /* background-image: url("/images/wind-1.jpg");
+  background-size: cover;  */
+  /* Cover the entire element */
+  /* background-attachment: fixed; */
+  /* Fix the background while scrolling */
+  /* background-position: center;  */
+  /* Center the image */
+  /* background-repeat: no-repeat;  */
+  /* Prevent repeating */
+  filter: brightness(70%);
+  overflow: hidden;
   z-index: -1;
+}
+
+/* .home-section1-bg-img video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+} */
+
+.home-sec1-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* Ensures video fills height and crops sides */
 }
 
 .home-section1-bg-img::before {
@@ -46,7 +74,7 @@
     rgba(182, 182, 182, 0.1) 40%,
     rgba(0, 0, 0, 0.8) 100%
   ); */
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   /* background-image: radial-gradient(
     rgba(182, 182, 182, 0.1) 15%,
     rgba(0, 0, 0, 0.3) 35%,
@@ -79,8 +107,8 @@
 
 .home-section-1 p {
   font-size: 18px;
-  /* color: #ffffff; */
-  color: #e9e9e9;
+  color: #ffffff;
+  /* color: #e9e9e9; */
   padding: 10px 125px;
   text-align: center;
 }
@@ -175,7 +203,8 @@
 
 .sec2-panel-content {
   border: solid 1px #ffffff;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
   margin: 10px 50px;
   border-radius: 20px;
   padding: 10px 25px;
@@ -254,14 +283,14 @@
   width: 100%;
   height: 100%;
   /* border: solid 1px red; */
-  background-image: url("/images/home1.jpg");
+  background-image: url("/images/home-section3.jpeg");
   background-size: cover; /* Cover the entire element */
   background-attachment: fixed; /* Fix the background while scrolling */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating */
   background-blend-mode: multiply !important;
 
-  filter: brightness(60%);
+  filter: brightness(70%);
 }
 
 .sec3-img {
@@ -442,13 +471,19 @@
   top: 0;
   left: 0;
 
-  background-image: url("/images/contact-bg2.jpg");
-  background-size: cover; /* Cover the entire element */
-  background-attachment: fixed; /* Fix the background while scrolling */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating */
+  /* background-image: url("/images/contact-bg2.jpg");
+  background-size: cover;  */
+  /* Cover the entire element */
+  /* background-attachment: fixed;  */
+  /* Fix the background while scrolling */
+  /* background-position: center;  */
+  /* Center the image */
+  /* background-repeat: no-repeat;  */
+  /* Prevent repeating */
 
-  filter: brightness(40%);
+  /* filter: brightness(40%); */
+
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 

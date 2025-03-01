@@ -205,7 +205,7 @@ export default function ContactForm() {
 
   return (
     <Container
-      className={` contact-form-container p-6 transition-all ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}`}
+      className={` contact-form-container p-6 transition-all ${darkMode ? "bg-black text-white" : "bg-white text-gray-900"}`}
     >
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Contact Us</h2>

@@ -10,6 +10,8 @@ import { motion } from "motion/react";
 import { useServerLink } from "../../context/server.context";
 
 const Blog2 = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   const { serverLink } = useServerLink();
 
   return (

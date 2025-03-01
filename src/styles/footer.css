@@ -15,22 +15,33 @@
 }
 
 .sec1-content-container a {
+  display: block;
+  margin-top: 5px;
   color: #ffffff !important;
 }
 
 .footer-row1-icon-container {
-  /* border: solid 1px red; */
+  /* border: solid 2px #ff8b38; */
   margin-right: 20px;
-  padding: 10px;
+  padding: 9px;
   background-color: #ff8b38;
 
-  border-radius: 20px;
+  border-radius: 16px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.sec1-content-container:hover .footer-row1-icon-container {
+  background-color: #ffffff;
+  color: #ff8b38;
 }
 
 .footer-row1-icon-container svg {
-  width: 45px;
-  height: 45px;
-  color: #ffffff;
+  /* width: 45px;
+  height: 45px; */
+  width: 35px;
+  height: 35px;
+  /* color: #ffffff; */
 }
 
 .sec2-content-container {

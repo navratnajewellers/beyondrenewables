@@ -2,13 +2,12 @@ import { Affix, Drawer, useMediaQuery } from "rsuite";
 import "../styles/header.css";
 // import companyLogo from "/images/logo-33_2.png";
 import mobileCompanyLogo from "/images/logo-1.png";
-import AnimatedText2 from "./AnimatedText2";
-// import AnimatedText3 from "./AnimatedText3";
 import { useServerLink } from "../context/server.context";
 import { Link } from "react-router-dom";
 import MenuIcon from "@rsuite/icons/Menu";
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import AnimatedText4 from "./AnimatedText4";
 
 const WbHeader = () => {
   const { serverLink } = useServerLink();
@@ -51,14 +50,14 @@ const WbHeader = () => {
           </a>
           <nav className="header-main flex flex-row">
             <Link to={`${serverLink}/`} className="header-main-item ">
-              <AnimatedText2 text={`Home`} />
+              <AnimatedText4 text={`Home`} />
             </Link>
             {/* <a href="#" className="header-main-item">
                 <AnimatedText2 text={`Our Solutions`} />
               </a> */}
             <div className="header-main-item header-menu-container ">
               <a href="#">
-                <AnimatedText2 text={`Our Solutions`} />
+                <AnimatedText4 text={`Our Solutions`} />
               </a>
               <ul className="header-sub-menu">
                 <li>
@@ -77,16 +76,16 @@ const WbHeader = () => {
               </ul>
             </div>
             <a href={`${serverLink}/product`} className="header-main-item">
-              <AnimatedText2 text={`Our Products`} />
+              <AnimatedText4 text={`Our Products`} />
             </a>
             <Link to={`${serverLink}/about`} className="header-main-item">
-              <AnimatedText2 text={`About`} />
+              <AnimatedText4 text={`About`} />
             </Link>
             <a href={`${serverLink}/blog`} className="header-main-item">
-              <AnimatedText2 text={`Blog`} />
+              <AnimatedText4 text={`Blog`} />
             </a>
             <a href={`${serverLink}/contact`} className="header-main-item">
-              <AnimatedText2 text={`Contact`} />
+              <AnimatedText4 text={`Contact`} />
             </a>
           </nav>
           <nav className="header-started">

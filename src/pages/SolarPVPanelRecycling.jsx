@@ -8,6 +8,8 @@ import WbFooter from "../components/WbFooter";
 import { motion } from "motion/react";
 
 const SolarPVPanelRecycling = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   const { serverLink } = useServerLink();
 
   const productsDetails = [
