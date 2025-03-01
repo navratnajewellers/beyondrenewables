@@ -24,8 +24,6 @@ import Blog2 from "./pages/blogPage/Blog2";
 function App() {
   const { serverLink } = useServerLink();
 
-  console.log(serverLink);
-
   return (
     <PageLoader>
       <BrowserRouter>

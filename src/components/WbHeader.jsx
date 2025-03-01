@@ -19,7 +19,7 @@ const WbHeader = () => {
   // for the nav in drawer, opening options
   const [open, setOpen] = useState(false);
 
-  console.log("is on Mobile device", isMobile);
+  // console.log("is on Mobile device", isMobile);
 
   if (!CSS.supports("animation-timeline: scroll()")) {
     let lastScroll = 0;
