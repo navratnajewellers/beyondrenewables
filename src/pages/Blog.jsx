@@ -5,8 +5,11 @@ import SolarBlog from "../components/SolarBlog";
 import { motion } from "motion/react";
 import WbFooter from "../components/WbFooter";
 import { Helmet } from "react-helmet-async";
+import { useServerLink } from "../context/server.context";
 
 const Blog = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Helmet>
@@ -37,7 +40,7 @@ const Blog = () => {
           <h1>Blog</h1>
         </div>
         <Breadcrumb className="bc-content">
-          <Breadcrumb.Item href="/" className="bc-non-active">
+          <Breadcrumb.Item href={`${serverLink}/`} className="bc-non-active">
             Home
           </Breadcrumb.Item>
           <Breadcrumb.Item active className="bc-active">

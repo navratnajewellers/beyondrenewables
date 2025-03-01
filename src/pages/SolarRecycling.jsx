@@ -5,8 +5,12 @@ import WbHeader from "../components/WbHeader";
 import WbFooter from "../components/WbFooter";
 import { Helmet } from "react-helmet-async";
 import { motion } from "motion/react";
+import consultationImage1 from "/images/consultation2.jpeg";
+import { useServerLink } from "../context/server.context";
 
 const SolarRecycling = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Helmet>
@@ -38,7 +42,7 @@ const SolarRecycling = () => {
           <h1>Solar Recycling</h1>
         </div>
         <Breadcrumb className="bc-content">
-          <Breadcrumb.Item href="/" className="bc-non-active">
+          <Breadcrumb.Item href={`${serverLink}/`} className="bc-non-active">
             Home
           </Breadcrumb.Item>
           <Breadcrumb.Item active className="bc-active">
@@ -60,7 +64,7 @@ const SolarRecycling = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <div className="imageWrapper">
-              <img src="/images/consultation2.jpeg" />
+              <img src={consultationImage1} />
             </div>
           </Col>
           <Col

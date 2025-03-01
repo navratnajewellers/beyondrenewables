@@ -8,8 +8,11 @@ import WbFooter from "../../components/WbFooter";
 import blogImage1 from "/images/blog-1.jpg";
 import blogImage2 from "/images/blog-2.jpg";
 import { motion } from "motion/react";
+import { useServerLink } from "../../context/server.context";
 
 const Blog1 = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Helmet>
@@ -41,7 +44,7 @@ const Blog1 = () => {
           <h1>Solar Panel Waste: Numbers and Nuisance</h1>
         </div>
         <Breadcrumb className="bc-content">
-          <Breadcrumb.Item href="/" className="bc-non-active">
+          <Breadcrumb.Item href={`${serverLink}/`} className="bc-non-active">
             Home
           </Breadcrumb.Item>
           <Breadcrumb.Item active className="bc-active">

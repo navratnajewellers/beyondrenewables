@@ -7,8 +7,11 @@ import { FaGripLinesVertical } from "react-icons/fa6";
 import blogImage2 from "/images/blog-2.jpg";
 import WbFooter from "../../components/WbFooter";
 import { motion } from "motion/react";
+import { useServerLink } from "../../context/server.context";
 
 const Blog2 = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Helmet>
@@ -43,7 +46,7 @@ const Blog2 = () => {
           </h1>
         </div>
         <Breadcrumb className="bc-content">
-          <Breadcrumb.Item href="/" className="bc-non-active">
+          <Breadcrumb.Item href={`${serverLink}/`} className="bc-non-active">
             Home
           </Breadcrumb.Item>
           <Breadcrumb.Item active className="bc-active">

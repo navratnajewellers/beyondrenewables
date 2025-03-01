@@ -3,8 +3,11 @@ import ScrollPage from "../components/ScrollPage";
 import WbHeader from "../components/WbHeader";
 import WbFooter from "../components/WbFooter";
 import { Helmet } from "react-helmet-async";
+import { useServerLink } from "../context/server.context";
 
 const PrivacyPolicy = () => {
+  const { serverLink } = useServerLink();
+
   return (
     <div>
       <Helmet>
@@ -36,7 +39,7 @@ const PrivacyPolicy = () => {
           <h1>Privacy Policy</h1>
         </div>
         <Breadcrumb className="bc-content">
-          <Breadcrumb.Item href="/" className="bc-non-active">
+          <Breadcrumb.Item href={`${serverLink}/`} className="bc-non-active">
             Home
           </Breadcrumb.Item>
           <Breadcrumb.Item active className="bc-active">

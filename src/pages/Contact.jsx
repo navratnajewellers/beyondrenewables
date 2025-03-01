@@ -8,8 +8,11 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { Helmet } from "react-helmet-async";
 import { FaPhoneVolume } from "react-icons/fa6";
+import { useServerLink } from "../context/server.context";
 
 const Contact = () => {
+  const { serverLink } = useServerLink();
+
   const [isMapLoading, setIsMapLoading] = useState(true);
 
   return (
@@ -42,7 +45,7 @@ const Contact = () => {
           <h1>Contact Us</h1>
         </div>
         <Breadcrumb className="bc-content">
-          <Breadcrumb.Item href="/" className="bc-non-active">
+          <Breadcrumb.Item href={`${serverLink}/`} className="bc-non-active">
             Home
           </Breadcrumb.Item>
           <Breadcrumb.Item active className="bc-active">
