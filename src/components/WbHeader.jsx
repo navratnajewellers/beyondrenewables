@@ -20,20 +20,20 @@ const WbHeader = () => {
 
   // console.log("is on Mobile device", isMobile);
 
-  if (!CSS.supports("animation-timeline: scroll()")) {
-    let lastScroll = 0;
-    const header = document.getElementById("headerLogo");
+  // if (!CSS.supports("animation-timeline: scroll()")) {
+  //   let lastScroll = 0;
+  //   const header = document.getElementById("headerLogo");
 
-    window.addEventListener("scroll", () => {
-      let currentScroll = window.scrollY;
-      if (currentScroll > lastScroll) {
-        header.style.display = "none"; // Hide when scrolling down
-      } else {
-        header.style.display = "block"; // Show when scrolling up
-      }
-      lastScroll = currentScroll;
-    });
-  }
+  //   window.addEventListener("scroll", () => {
+  //     let currentScroll = window.scrollY;
+  //     if (currentScroll > lastScroll) {
+  //       header.style.display = "none"; // Hide when scrolling down
+  //     } else {
+  //       header.style.display = "block"; // Show when scrolling up
+  //     }
+  //     lastScroll = currentScroll;
+  //   });
+  // }
 
   //Desktop Header
   const DesktopHeader = () => {
@@ -101,7 +101,7 @@ const WbHeader = () => {
   // Mobile Header
   const MobileHeader = () => {
     return (
-      <Affix>
+      <>
         <header className="m-header-container shadow-md ">
           <div className="m-header">
             <nav className="m-h-logo-container">
@@ -129,7 +129,7 @@ const WbHeader = () => {
             </nav>
           </div>
         </header>
-      </Affix>
+      </>
     );
   };
 

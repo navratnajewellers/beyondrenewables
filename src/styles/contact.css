@@ -22,13 +22,15 @@
 }
 
 .ct-sec1-content-detail {
-  border: solid 1px #cacaca;
+  /* border: solid 1px #cacaca; */
+  background-color: #dbdbdb;
   /* padding: 25px 75px; */
   padding: 15px;
   padding-left: 25px;
   border-radius: 12px;
   width: 320px;
   height: 200px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   flex-direction: column;

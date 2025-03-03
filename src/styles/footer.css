@@ -6,6 +6,11 @@
   color: #ffffff;
 }
 
+.footer-section1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .sec1-content-container {
   /* border: solid 1px blue; */
   justify-content: center;

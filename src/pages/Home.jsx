@@ -11,6 +11,7 @@ import ContactForm from "../components/ContactForm";
 import WbFooter from "../components/WbFooter";
 import ScrollPage from "../components/ScrollPage";
 import { Helmet } from "react-helmet-async";
+import ReadMore from "../components/ReadMore";
 // import { FaBeer } from "react-icons/fa";
 
 const Home = () => {
@@ -82,7 +83,7 @@ const Home = () => {
               solutions for a greener, cleaner, and circular future.{" "}
             </p>
             <div>
-              <a href="/about" className="section1-discover">
+              <a href={`${serverLink}/about`} className="section1-discover">
                 Discover{" "}
               </a>
             </div>
@@ -335,7 +336,28 @@ const Home = () => {
             <Col xs={24} md={12} className="sec4-recycling-content">
               <h4 className="main-color">About Us</h4>
               <h2>Innovators in Renewables Recycling</h2>
-              <p>
+              <ReadMore
+                text={`Beyond Renewables is more than just a startup; it&apos;s a
+                movement towards a sustainable world. Our mission is to
+                revolutionize recycling and waste management, transforming how
+                industries and individuals perceive and handle waste. We believe
+                in the power of a circular economy, where resources are reused,
+                repurposed, and regenerated to their fullest potential. Our
+                approach integrates advanced technologies and innovative
+                practices, ensuring that every step we take is aligned with our
+                commitment to environmental stewardship. From solar PV panel
+                recycling to developing comprehensive waste management
+                solutions, Beyond Renewables is at the forefront of change.
+                Manhar and Vedant bring diverse expertise and a shared vision to
+                the table. Together, they are dedicated to pushing boundaries
+                and setting new standards in the recycling industry. Their
+                leadership and dedication drive Beyond Renewables to
+                continuously seek new opportunities to expand and impact various
+                sectors, contributing to a sustainable future for generations to
+                come.`}
+                maxLength={1050}
+              />
+              {/* <p>
                 Beyond Renewables is more than just a startup; it&apos;s a
                 movement towards a sustainable world. Our mission is to
                 revolutionize recycling and waste management, transforming how
@@ -354,7 +376,7 @@ const Home = () => {
                 continuously seek new opportunities to expand and impact various
                 sectors, contributing to a sustainable future for generations to
                 come.
-              </p>
+              </p> */}
             </Col>
             <Col xs={24} md={12} className="sec4-recycling-video">
               <video
