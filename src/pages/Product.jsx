@@ -20,6 +20,7 @@ const Product = () => {
       materialWeight: "75%",
       recoveryRate: "96%",
       purity: "98%",
+      link: "glassCutllets",
     },
     {
       id: 2,
@@ -28,6 +29,7 @@ const Product = () => {
       materialWeight: "8%",
       recoveryRate: "99%",
       purity: "99%",
+      link: "aluminium",
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ const Product = () => {
       materialWeight: "1%",
       recoveryRate: "97%",
       purity: "98%",
+      link: "copper",
     },
     {
       id: 4,
@@ -44,6 +47,7 @@ const Product = () => {
       materialWeight: "5%",
       recoveryRate: "97%",
       purity: "98%",
+      link: "silicon",
     },
     {
       id: 5,
@@ -52,6 +56,7 @@ const Product = () => {
       materialWeight: "0.02%",
       recoveryRate: "95%",
       purity: "99%",
+      link: "silver",
     },
     {
       id: 6,
@@ -60,6 +65,7 @@ const Product = () => {
       materialWeight: "10%",
       recoveryRate: "85%",
       purity: "95%",
+      link: "plasticPyrolysisOil",
     },
   ];
 
@@ -149,13 +155,13 @@ const Product = () => {
           {productsDetails.map((data) => (
             <div key={data.id} className="p-sec2-content">
               <div className="imageWrapper">
-                <a href="/solar-pv-panel-recycling">
+                <a href={`#${data.link}`}>
                   <img src={data.img} />
                 </a>
               </div>
               <div>
                 <h5>
-                  <a href="/solar-pv-panel-recycling" className="main-color">
+                  <a href={`#${data.link}`} className="main-color">
                     {data.name}
                   </a>
                 </h5>
@@ -193,6 +199,7 @@ const Product = () => {
           initial={{ opacity: 0, translateY: 45 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          id="glassCutllets"
         >
           <h3 className="main-color">Use-cases in Industries beyond Solar</h3>
           <ul>
@@ -216,6 +223,7 @@ const Product = () => {
           initial={{ opacity: 0, translateY: 45 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          id="copper"
         >
           <h3 className="main-color">Recycled Copper Wire</h3>
           <ul>
@@ -242,6 +250,7 @@ const Product = () => {
           initial={{ opacity: 0, translateY: 45 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          id="silicon"
         >
           <h3 className="main-color">Recycled Silicon</h3>
           <ul>
@@ -267,6 +276,7 @@ const Product = () => {
           initial={{ opacity: 0, translateY: 45 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          id="silver"
         >
           <h3 className="main-color">Recycled Silver</h3>
           <ul>
@@ -293,6 +303,7 @@ const Product = () => {
           initial={{ opacity: 0, translateY: 45 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          id="aluminium"
         >
           <h3 className="main-color">Recycled Aluminium</h3>
           <ul>

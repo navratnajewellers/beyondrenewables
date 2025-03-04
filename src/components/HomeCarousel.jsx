@@ -40,11 +40,16 @@ const HomeCarousel = () => {
     },
     {
       id: 4,
+      img: `${serverLink}/images/4.jpg`,
+      text: "Silicon",
+    },
+    {
+      id: 5,
       img: `${serverLink}/images/5.jpg`,
       text: "Silver",
     },
     {
-      id: 5,
+      id: 6,
       img: `${serverLink}/images/6.jpg`,
       text: "Plastic Pyrolysis Oil",
     },
